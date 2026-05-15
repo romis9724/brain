@@ -16,6 +16,7 @@ import re
 import sys
 import time
 from datetime import datetime
+from typing import Optional
 
 try:
     from youtube_transcript_api import YouTubeTranscriptApi
@@ -66,7 +67,7 @@ def format_date(d: str) -> str:
     return f"{d[:4]}-{d[4:6]}-{d[6:8]}" if d and len(d) == 8 else ""
 
 
-def get_transcript(vid_id: str) -> str | None:
+def get_transcript(vid_id: str) -> Optional[str]:
     api = YouTubeTranscriptApi()
     for langs in [['ko'], ['ko', 'en'], None]:
         try:
@@ -84,7 +85,7 @@ def get_transcript(vid_id: str) -> str | None:
 
 
 def make_clip(vid_id: str, title: str, upload_date: str,
-              author: str, description: str = "") -> tuple[str, bool]:
+              author: str, description: str = ""):  # -> tuple[str, bool]
     url = f"https://www.youtube.com/watch?v={vid_id}"
     pub = format_date(upload_date) if upload_date and upload_date != 'NA' else ""
     desc_safe = (description or "").replace('"', "'").replace('\n', ' ')[:300]
@@ -115,7 +116,36 @@ tags:
     return content, transcript is not None
 
 
-def get_video_list(url: str) -> list[tuple[str, str, str]]:
+def build_seen_ids(brain_dir: str) -> dict:
+    """raw/ 및 wiki/ 전체를 스캔해 YouTube 영상 ID → 발견 경로 매핑 반환.
+
+    frontmatter의 source: 필드 또는 본문에서 YouTube 영상 ID(11자)를 추출한다.
+    중복 수집 방지를 위해 실제 처리 전에 한 번만 호출한다.
+    """
+    seen = {}
+    yt_pat = re.compile(r'(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{11})')
+    for search_dir in ("raw", "wiki"):
+        dir_path = os.path.join(brain_dir, search_dir)
+        if not os.path.isdir(dir_path):
+            continue
+        for root, _, files in os.walk(dir_path):
+            for fname in files:
+                if not fname.endswith(".md"):
+                    continue
+                fpath = os.path.join(root, fname)
+                try:
+                    with open(fpath, encoding="utf-8") as f:
+                        head = f.read(2000)  # frontmatter만 읽으면 충분
+                    for m in yt_pat.finditer(head):
+                        vid = m.group(1)
+                        if vid not in seen:
+                            seen[vid] = os.path.relpath(fpath, brain_dir)
+                except Exception:
+                    pass
+    return seen
+
+
+def get_video_list(url: str) -> list:
     """채널에서 영상 목록 반환: [(vid_id, title, upload_date), ...]"""
     result = subprocess.run(
         ["yt-dlp", "--flat-playlist", "--print",
@@ -138,7 +168,7 @@ def is_single_video(url: str) -> bool:
     return "watch?v=" in url or "youtu.be/" in url
 
 
-def get_single_video_info(url: str) -> tuple[str, str, str]:
+def get_single_video_info(url: str) -> tuple:
     result = subprocess.run(
         ["yt-dlp", "--print", "%(id)s\t%(title)s\t%(upload_date)s",
          "--no-playlist", url],
@@ -174,25 +204,38 @@ def main():
     else:
         print("채널 영상 목록 수집 중...", flush=True)
         videos = get_video_list(args.url)
-        print(f"총 {len(videos)}개 영상 발견\n", flush=True)
+        print(f"총 {len(videos)}개 영상 발견", flush=True)
+
+    # raw/ + wiki/ 전체에서 이미 수집된 영상 ID 목록 구성
+    print("중복 검사 중 (raw/ + wiki/ 스캔)...", flush=True)
+    seen_ids = build_seen_ids(BRAIN_DIR)
+    print(f"기존 수집 영상: {len(seen_ids)}개\n", flush=True)
 
     # 각 영상 처리
     ok = skip = fail = 0
 
     for i, (vid_id, title, date) in enumerate(videos, 1):
-        fname = os.path.join(output_dir, f"{sanitize(title)}.md")
+        # 1) 영상 ID 기준 중복 체크 (raw/ 또는 wiki/ 어디에든 있으면 스킵)
+        if vid_id in seen_ids:
+            skip += 1
+            loc = seen_ids[vid_id]
+            print(f"[{i:3d}/{len(videos)}] SKIP  {title[:45]} ({loc})", flush=True)
+            continue
 
+        # 2) 파일명 기준 중복 체크 (ID 못 찾은 경우 보조 수단)
+        fname = os.path.join(output_dir, f"{sanitize(title)}.md")
         if os.path.exists(fname):
             skip += 1
-            print(f"[{i:3d}/{len(videos)}] SKIP  {title[:55]}", flush=True)
+            print(f"[{i:3d}/{len(videos)}] SKIP  {title[:55]} (파일명 중복)", flush=True)
             continue
 
         print(f"[{i:3d}/{len(videos)}] 처리  {title[:55]}", end=" ", flush=True)
 
         try:
             content, has_tr = make_clip(vid_id, title, date, channel)
-            with open(fname, 'w', encoding='utf-8') as f:
+            with open(fname, "w", encoding="utf-8") as f:
                 f.write(content)
+            seen_ids[vid_id] = os.path.relpath(fname, BRAIN_DIR)  # 즉시 등록
             ok += 1
             print(f"{'✓ 자막' if has_tr else '✓ 메타'}", flush=True)
         except Exception as e:
