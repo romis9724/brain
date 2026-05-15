@@ -22,3 +22,12 @@
   - entities/tools: `notebooklm.md`, `obsidian-web-clipper.md`, `qmd.md`, `hermes-agent.md`
 - 업데이트: `wiki/overview.md`, `index.md`
 - 도메인 확장: LLM/AI 지식관리 영역 개설
+
+## [2026-05-16] lint | wiki 건강 검진
+
+- 전체 검사 파일: 15개
+- 깨진 링크: 0개 ✓
+- 고아 페이지: 0개 ✓
+- Index 누락: 0개 ✓
+- 통계 정확성: OK ✓
+- 결론: wiki 상태 정상. 모든 링크 무결성 확인됨
