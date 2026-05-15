@@ -1,7 +1,7 @@
 ---
 updated: 2026-05-16
-source_count: 16
-page_count: 43
+source_count: 17
+page_count: 44
 ---
 
 # Overview
@@ -72,4 +72,4 @@ YouTube "코인 매매 전략" 검색으로 수집된 247개 영상에서 추출
 | 도메인 | 3 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석) |
 | 인물 | 2 (Andrej Karpathy, 김영익) |
 | 도구 | 4 (NotebookLM, Web Clipper, qmd, Hermes Agent) |
-| 처리된 원본 영상 | 645개 (김영익 398개 + 코인매매전략 247개) |
+| 처리된 원본 영상 | 646개 (김영익 398개 + 코인매매전략 247개 + 단건 1개) |

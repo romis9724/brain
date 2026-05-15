@@ -10,10 +10,12 @@
 """
 
 import argparse
+import json
 import subprocess
 import os
 import re
 import sys
+import tempfile
 import time
 from datetime import datetime
 from typing import Optional
@@ -67,21 +69,80 @@ def format_date(d: str) -> str:
     return f"{d[:4]}-{d[4:6]}-{d[6:8]}" if d and len(d) == 8 else ""
 
 
+def _segs_to_text(segs) -> Optional[str]:
+    lines = []
+    for s in segs:
+        txt = s.text.strip().replace('\n', ' ')
+        if txt:
+            lines.append(f"**{seconds_to_ts(s.start)}** · {txt}")
+    return '\n\n'.join(lines) if lines else None
+
+
+def _parse_json3(fpath: str) -> Optional[str]:
+    """yt-dlp JSON3 자막 파일 → 타임스탬프 텍스트"""
+    try:
+        with open(fpath, encoding="utf-8") as f:
+            data = json.load(f)
+        lines = []
+        for event in data.get("events", []):
+            segs = event.get("segs", [])
+            if not segs:
+                continue
+            text = "".join(s.get("utf8", "") for s in segs).strip().replace('\n', ' ')
+            if not text or text == "\n":
+                continue
+            ts = seconds_to_ts(event.get("tStartMs", 0) / 1000)
+            lines.append(f"**{ts}** · {text}")
+        return '\n\n'.join(lines) if lines else None
+    except Exception:
+        return None
+
+
+def _get_transcript_ytdlp(vid_id: str) -> Optional[str]:
+    """yt-dlp + Chrome 쿠키로 자동생성 자막 다운로드 (IP 차단 우회)"""
+    url = f"https://www.youtube.com/watch?v={vid_id}"
+    with tempfile.TemporaryDirectory() as tmpdir:
+        out_tmpl = os.path.join(tmpdir, "%(id)s")
+        base_cmd = ["yt-dlp", "--cookies-from-browser", "chrome",
+                    "--skip-download", "--write-auto-sub",
+                    "--sub-lang", "ko", "--sub-format", "json3",
+                    "--output", out_tmpl]
+        # curl-cffi가 있으면 브라우저 핑거프린트 우회 시도
+        for cmd in [base_cmd + ["--impersonate", "chrome", url],
+                    base_cmd + [url]]:
+            subprocess.run(cmd, capture_output=True, text=True)
+            for fname in os.listdir(tmpdir):
+                if fname.endswith(".json3"):
+                    return _parse_json3(os.path.join(tmpdir, fname))
+    return None
+
+
 def get_transcript(vid_id: str) -> Optional[str]:
     api = YouTubeTranscriptApi()
-    for langs in [['ko'], ['ko', 'en'], None]:
+
+    # 1. youtube-transcript-api: 언어 선호순
+    for langs in [['ko'], ['ko', 'en']]:
         try:
-            kw = {'languages': langs} if langs else {}
-            segs = list(api.fetch(vid_id, **kw))
-            lines = []
-            for s in segs:
-                txt = s.text.strip().replace('\n', ' ')
-                if txt:
-                    lines.append(f"**{seconds_to_ts(s.start)}** · {txt}")
-            return '\n\n'.join(lines)
+            result = _segs_to_text(api.fetch(vid_id, languages=langs))
+            if result:
+                return result
         except Exception:
             continue
-    return None
+
+    # 2. youtube-transcript-api: 자동생성 포함 전체 목록
+    try:
+        for t in api.list(vid_id):
+            try:
+                result = _segs_to_text(t.fetch())
+                if result:
+                    return result
+            except Exception:
+                continue
+    except Exception:
+        pass
+
+    # 3. yt-dlp + Chrome 쿠키 폴백 (IP 차단 시)
+    return _get_transcript_ytdlp(vid_id)
 
 
 def make_clip(vid_id: str, title: str, upload_date: str,
