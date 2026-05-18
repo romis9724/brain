@@ -1,9 +1,8 @@
 ---
 title: RAG (Retrieval-Augmented Generation)
 type: concept
-tags: [rag, llm, 지식관리]
-related: [[concepts/llm-wiki]], [[concepts/pkm]]
-sources: [[sources/llm-wiki-카파시]]
+tags: [rag, llm, 지식관리, spring-ai]
+sources: [[sources/llm-wiki-카파시], [sources/spring-ai-langchain4j-rag-egovframe]]
 ---
 
 # RAG — 검색 증강 생성
@@ -11,11 +10,53 @@ sources: [[sources/llm-wiki-카파시]]
 LLM이 질문에 답할 때 외부 문서에서 관련 청크를 검색해 컨텍스트로 활용하는 방식.
 NotebookLM, ChatGPT 파일 업로드, 대부분의 문서 QA 시스템이 이 방식.
 
+LLM의 한계(학습 시점 이후 데이터 모름, 도메인 특화 지식 부족, 환각) 및 Fine-Tuning 대비 저비용이라는 이점으로 실무에서 널리 활용.
+
 ## 작동 방식
 
 ```
 질문 → 관련 청크 검색(임베딩/BM25) → LLM에 컨텍스트로 전달 → 답변 생성
 ```
+
+## RAG 3단계 프로세스 (Spring AI 기준)
+
+**1단계 — 문서 준비 (ETL Pipeline, 사전 작업)**
+- Reader: PDF, Markdown, JSON 등 다양한 포맷 읽기
+- Transformer(Splitter): 문서를 청크로 분할
+- Writer: Embedding 생성 후 Vector Store에 저장
+
+**2단계 — 검색 (Retrieval, 런타임)**
+- 사용자 질문을 Embedding 변환
+- Vector Store에서 유사도 기반 Top-K 문서 검색
+- 메타데이터 필터링 가능
+
+**3단계 — 생성 (Augmented Generation, 런타임)**
+- 검색된 문서를 컨텍스트로 추가
+- Query + Context를 LLM에 전달
+- 컨텍스트 기반 답변 생성
+
+## Spring AI에서의 RAG 구현
+
+**QuestionAnswerAdvisor** (단순 RAG):
+```java
+ChatClient.builder(chatModel).build().prompt()
+    .advisors(QuestionAnswerAdvisor.builder(vectorStore).build())
+    .user(question).call().content();
+```
+
+**RetrievalAugmentationAdvisor** (모듈형 RAG — 단계별 커스텀):
+```java
+Advisor ragAdvisor = RetrievalAugmentationAdvisor.builder()
+    .queryTransformers(RewriteQueryTransformer.builder()...) // 쿼리 재작성
+    .documentRetriever(VectorStoreDocumentRetriever.builder()
+        .similarityThreshold(0.50).vectorStore(vectorStore).build())
+    .build();
+```
+
+쿼리 변환 옵션:
+- `RewriteQueryTransformer`: 모호한 쿼리를 LLM으로 재작성
+- `CompressionQueryTransformer`: 대화 맥락 참조해 독립 쿼리로 압축
+- `TranslationQueryTransformer`: 다국어 쿼리 번역
 
 ## LLM Wiki와의 비교
 
@@ -42,3 +83,5 @@ index.md를 통한 카탈로그 기반 내비게이션.
 ## 연결
 
 - [[concepts/llm-wiki]] — RAG의 한계를 극복하는 패턴
+- [[concepts/spring-ai]] — Spring AI에서의 RAG 구현 상세
+- [[concepts/langchain4j]] — Langchain4j에서의 RAG 구현

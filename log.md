@@ -56,6 +56,40 @@
 - 기존 개념 보강: `기술적-분석.md`, `데이트레이딩.md` 관련 소스 추가
 - 총 wiki 페이지: 32 → 43 (+11), 총 소스: 11 → 16 (+5), 처리 영상 누계: 645개
 
+## [2026-05-16] query | 코인 자동매매 데이트레이딩 추천 매매기법 정리
+
+- 참조 페이지: `sources/가상자산-데이트레이딩-전략`, `sources/코인매매-자동매매봇`, `sources/코인매매-단타-스캘핑`, `concepts/코인-자동매매봇`, `concepts/코인-보조지표-활용`, `concepts/데이트레이딩`
+- 목적: 자동매매 프로그램 개발용 agent 전달 정보 정리
+- 출처: 247개 영상 ingest 기반 wiki 통합 정보
+- 저장 페이지: `wiki/concepts/코인-자동매매-데이트레이딩-추천전략.md` (신규 생성)
+
+## [2026-05-18] ingest | Spring AI 및 Langchain4j를 활용한 생성형 AI 및 RAG 지원 (eGovFrame 세미나)
+
+- 원본: `raw/informations/(6부) Spring AI 및 Langchain4j를 활용한 생성형 AI 및 RAG 지원.pdf`
+- eGovFrame(전자정부 표준프레임워크) 세미나 자료 53페이지 PDF
+- 신규 생성 (5개):
+  - `wiki/sources/spring-ai-langchain4j-rag-egovframe.md` — 소스 요약 (핵심 포인트, 코드 패턴)
+  - `wiki/concepts/spring-ai.md` — Spring AI 개념·Advisors API·Portable API 상세
+  - `wiki/concepts/langchain4j.md` — Langchain4j·AiServices 프록시 패턴·Spring AI 비교
+  - `wiki/entities/tools/ollama.md` — 로컬 LLM 실행 도구
+  - `wiki/entities/tools/egovframe.md` — 전자정부 표준프레임워크·공식 지원 의존성 목록
+- 업데이트 (1개): `wiki/concepts/rag.md` — RAG 3단계 프로세스, Spring AI 구현 패턴 보강
+- 총 wiki 페이지: 50 → 56 (+6), 총 소스: 18 → 19 (+1)
+- 주요 인사이트: Spring AI(Advisor Chain) vs Langchain4j(AiServices 프록시) 패턴 비교 수록
+
+## [2026-05-17] ingest | 나스닥 ETF 룰 변경 — 송팀장
+
+- 원본: `raw/external/송팀장/나스닥 ETF 룰이 바뀌었습니다 — 지금 적립 중이라면 꼭 보세요.md`
+- 채널: 송팀장 (2026.05.13 업로드), 자막 포함 (yt-dlp VTT 추출)
+- 신규 생성:
+  - `wiki/sources/나스닥ETF-룰변경-송팀장.md`
+  - `wiki/concepts/나스닥100-인덱스-룰변경.md` (패스트엔트리·팬텀시총·플로트3배·분기리밸런싱 4가지 상세)
+  - `wiki/concepts/ETF-패시브투자.md` (패시브 ETF 구조·취약점·대안)
+  - `wiki/entities/people/송팀장.md`
+- 업데이트: `wiki/overview.md`, `index.md` (도메인 신규 추가: 투자/미국ETF)
+- 도메인 확장: 투자/미국ETF 신규 섹터 신설
+- 총 wiki 페이지: 45 → 50 (+5), 총 소스: 17 → 18 (+1), 처리 영상 누계: 646 → 647개
+
 ## [2026-05-16] ingest | 국민성장펀드 vs 반도체 ETF 단건 영상
 
 - 원본: `raw/external/youtube/국민성장펀드 vs 반도체 ETF  같은 3000만원, 5년 뒤 손에 쥐는 돈이 다릅니다.md`

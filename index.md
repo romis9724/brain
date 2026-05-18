@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-16
-total_pages: 44
-total_sources: 17
+updated: 2026-05-18
+total_pages: 56
+total_sources: 19
 ---
 
 # Index
@@ -18,16 +18,20 @@ total_sources: 17
 
 ## Sources (16)
 
-### LLM / AI 지식관리 (3)
+### LLM / AI 지식관리 (4)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
 - [[wiki/sources/notebooklm-cli-llm위키-튜토리얼|NotebookLM CLI + LLM Wiki 튜토리얼]] — NotebookLM CLI로 조사 결과를 LLM Wiki에 자동 저장하는 워크플로우
 - [[wiki/sources/옵시디언-주식분석-llm위키|옵시디언 주식 분석 LLM Wiki]] — Claude Code + 옵시디언으로 국내 주식 분석 LLM Wiki 구축 사례
+- [[wiki/sources/spring-ai-langchain4j-rag-egovframe|Spring AI & Langchain4j RAG (eGovFrame)]] — Spring AI / Langchain4j 기반 생성형 AI·RAG 구현 실무 (eGovFrame 5.0.0 공식 지원)
 
 ### 투자 / 가상자산 — 데이트레이딩 (1)
 - [[wiki/sources/가상자산-데이트레이딩-전략|가상자산 데이트레이딩 전략]] — 이더리움·알트코인 대상 15분봉 기반 자동매매 전략 요약
 
 ### 투자 / ETF 비교 (1)
 - [[wiki/sources/국민성장펀드-vs-반도체ETF|국민성장펀드 vs 반도체 ETF]] — 동일 원금 3,000만원 5년 보유 시 수익 비교
+
+### 투자 / 미국 ETF — 나스닥100 룰 변경 (1)
+- [[wiki/sources/나스닥ETF-룰변경-송팀장|나스닥 ETF 룰 변경 — 송팀장]] — 2026.05.01 발효된 나스닥100 룰 4가지 변경 분석 (패스트엔트리·팬텀시총·플로트3배·분기리밸런싱)
 
 ### 투자 / 가상자산 — 코인 매매전략 (6)
 - [[wiki/sources/코인매매-비트코인-전략|코인매매 — 비트코인 매매전략]] — 파동 분석·차트 패턴·실시간 대응 비트코인 전략 (~90개 영상 통합)
@@ -50,10 +54,12 @@ total_sources: 17
 
 ## Concepts (15)
 
-### LLM / AI 지식관리 (3)
+### LLM / AI 지식관리 (5)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
-- [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식과 LLM Wiki와의 차이
+- [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 상세
 - [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, LLM Wiki)
+- [[wiki/concepts/spring-ai|Spring AI]] — Java/Spring 생태계 AI 통합 프레임워크, Advisor Chain + Portable API
+- [[wiki/concepts/langchain4j|Langchain4j]] — Java용 LLM 통합 프레임워크, AiServices Reflection 기반 프록시 패턴
 
 ### 투자 / 트레이딩 — 기술적 분석 (7)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
@@ -62,7 +68,12 @@ total_sources: 17
 - [[wiki/concepts/코인-보조지표-활용|코인 보조지표 활용]] — MACD·볼린저밴드·RSI·스토캐스틱·일목균형표·VWAP 실전 가이드 (신규)
 - [[wiki/concepts/코인-선물거래|코인 선물거래]] — 레버리지·롱숏·ICT 기법, 97% 손실 원인 분석 (신규)
 - [[wiki/concepts/코인-자동매매봇|코인 자동매매봇]] — 파이썬·챗GPT·노코드 자동화 전략, 마틴게일 위험성 (신규)
+- [[wiki/concepts/코인-자동매매-데이트레이딩-추천전략|코인 자동매매 데이트레이딩 추천전략]] — 이동평균+RSI·볼린저밴드+RSI·VWAP 3종 전략 및 구현 우선순위 종합 가이드
 - [[wiki/concepts/알트코인-투자전략|알트코인 투자전략]] — 섹터별 알트코인 분류, 비트코인 도미넌스 연동 전략 (신규)
+
+### 투자 / 미국 ETF (2)
+- [[wiki/concepts/ETF-패시브투자|ETF 패시브 투자]] — 지수 추종 ETF 작동 원리, 구조적 취약점, 대안 전략
+- [[wiki/concepts/나스닥100-인덱스-룰변경|나스닥100 인덱스 룰 변경 (2026)]] — 패스트엔트리·팬텀시총·플로트3배·분기리밸런싱 4가지 변경 상세
 
 ### 투자 / 거시경제 — 김영익 (5)
 - [[wiki/concepts/자산배분|자산배분]] — 경기순환 기반 주식·채권·대체자산·현금 비중 동적 조정 전략
@@ -79,12 +90,15 @@ total_sources: 17
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
+- [[wiki/entities/people/송팀장|송팀장]] — 미국 ETF·거시경제 유튜버, 지수 구조 분석 중심
 
-### Tools (4)
+### Tools (6)
 
 - [[wiki/entities/tools/notebooklm|NotebookLM]] — Google의 소스 기반 AI 리서치 도구, CLI 연동 가능
 - [[wiki/entities/tools/obsidian-web-clipper|Obsidian Web Clipper]] — 웹 페이지를 마크다운으로 변환해 vault에 저장하는 브라우저 확장
 - [[wiki/entities/tools/qmd|qmd]] — 마크다운 파일 로컬 검색 엔진 (BM25 + 벡터 + LLM 리랭킹)
 - [[wiki/entities/tools/hermes-agent|Hermes Agent]] — LLM Wiki 스킬이 내장된 에이전트 CLI
+- [[wiki/entities/tools/ollama|Ollama]] — 로컬 환경에서 오픈소스 LLM을 쉽게 다운로드·실행·관리하는 도구
+- [[wiki/entities/tools/egovframe|eGovFrame]] — 대한민국 전자정부 표준프레임워크, Spring AI/Langchain4j 공식 지원 (v5.0.0)
 
 ### Projects
