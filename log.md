@@ -63,6 +63,18 @@
 - 출처: 247개 영상 ingest 기반 wiki 통합 정보
 - 저장 페이지: `wiki/concepts/코인-자동매매-데이트레이딩-추천전략.md` (신규 생성)
 
+## [2026-05-18] ingest | 위노트 SaaS 1인창업 — 민상기 인터뷰 (하조은 채널)
+
+- 원본: `raw/external/혼자 AI로 만든 SaaS, 월 2,000만 원 찍었습니다.md`
+- 자막 전사 포함 (하조은 채널, 2026-04-20 업로드)
+- 신규 생성 (4개):
+  - `wiki/sources/위노트-saas-1인창업-민상기.md` — 창업 여정, PMF, 기술 매몰 경계, 해자 전략
+  - `wiki/concepts/1인-saas-창업.md` — AI 시대 1인 SaaS 창업 방법론 종합
+  - `wiki/entities/people/민상기.md` — 위노트 창업자
+  - `wiki/entities/people/하조은.md` — 인터뷰 채널 운영자
+- 도메인 신설: AI창업
+- 총 wiki 페이지: 53 → 57 (+4), 소스: 20 → 21 (+1), 인물: 3 → 5 (+2)
+
 ## [2026-05-18] ingest | 김영익 35개 영상 전사 재ingest + 송팀장 나스닥 ETF 룰 변경 전사 ingest
 
 - 대상: `raw/external/김영익/` 35개 전사 업데이트 파일 + `raw/external/송팀장/` 1개 신규 파일

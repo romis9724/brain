@@ -1,7 +1,7 @@
 ---
 updated: 2026-05-18
-total_pages: 53
-total_sources: 20
+total_pages: 57
+total_sources: 21
 ---
 
 # Index
@@ -18,11 +18,12 @@ total_sources: 20
 
 ## Sources (20)
 
-### LLM / AI 지식관리 (4)
+### LLM / AI 지식관리 (5)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
 - [[wiki/sources/notebooklm-cli-llm위키-튜토리얼|NotebookLM CLI + LLM Wiki 튜토리얼]] — NotebookLM CLI로 조사 결과를 LLM Wiki에 자동 저장하는 워크플로우
 - [[wiki/sources/옵시디언-주식분석-llm위키|옵시디언 주식 분석 LLM Wiki]] — Claude Code + 옵시디언으로 국내 주식 분석 LLM Wiki 구축 사례
 - [[wiki/sources/spring-ai-langchain4j-rag-egovframe|Spring AI & Langchain4j RAG (eGovFrame)]] — Spring AI / Langchain4j 기반 생성형 AI·RAG 구현 실무 (eGovFrame 5.0.0 공식 지원)
+- [[wiki/sources/위노트-saas-1인창업-민상기|위노트 SaaS 1인창업 — 민상기 인터뷰]] — AI(Claude Code)로 혼자 만든 학교 상담실 SaaS, 월 2,000만 원 달성 사례
 
 ### 투자 / 가상자산 — 데이트레이딩 (1)
 - [[wiki/sources/가상자산-데이트레이딩-전략|가상자산 데이트레이딩 전략]] — 이더리움·알트코인 대상 15분봉 기반 자동매매 전략 요약
@@ -52,9 +53,9 @@ total_sources: 20
 
 ---
 
-## Concepts (22)
+## Concepts (23)
 
-### LLM / AI 지식관리 (7)
+### LLM / AI 지식관리 (8)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
 - [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 상세
 - [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, LLM Wiki)
@@ -62,6 +63,7 @@ total_sources: 20
 - [[wiki/concepts/langchain4j|Langchain4j]] — Java용 LLM 통합 프레임워크, AiServices Reflection 기반 프록시 패턴
 - [[wiki/concepts/huggingface-embedding|HuggingFace 임베딩]] — sentence-transformers, MTEB 벤치마크, 한국어 임베딩 모델, ONNX 변환
 - [[wiki/concepts/huggingface-rag|HuggingFace 모델 RAG]] — HuggingFace 임베딩·LLM을 활용한 RAG 구현, 벡터 DB 연동, Spring AI 연동
+- [[wiki/concepts/1인-saas-창업|AI 시대 1인 SaaS 창업]] — PMF 검증, 오버 엔지니어링 회피, 해자 전략, Claude Code 개발 루틴
 
 ### 투자 / 트레이딩 — 기술적 분석 (8)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
@@ -88,11 +90,13 @@ total_sources: 20
 
 ## Entities
 
-### People (2)
+### People (5)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
 - [[wiki/entities/people/송팀장|송팀장]] — 미국 ETF·거시경제 유튜버, 지수 구조 분석 중심
+- [[wiki/entities/people/민상기|민상기]] — 위노트 1인 창업가, AI로 학교 상담실 SaaS 개발, 월 2,000만 원
+- [[wiki/entities/people/하조은|하조은]] — 개발자·창업가 인터뷰 YouTube 채널 운영자
 
 ### Tools (7)
 
