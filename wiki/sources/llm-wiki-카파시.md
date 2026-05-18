@@ -5,7 +5,6 @@ date: 2026-05-15
 source_file: raw/external/llm-wiki.md
 origin: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 tags: [llm-wiki, 지식관리, pkm, 세컨드브레인]
-related: [[concepts/llm-wiki]], [[concepts/pkm]], [[concepts/rag]], [[entities/people/안드레이-카파시]]
 ---
 
 # LLM Wiki — Andrej Karpathy 원본 문서

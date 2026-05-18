@@ -7,7 +7,6 @@ origin: https://www.youtube.com/watch?v=4JaN0NNvY_o
 author: 기획자 데이먼
 published: 2026-04-27
 tags: [llm-wiki, 옵시디언, 주식분석, pkm, claude-code]
-related: [[concepts/llm-wiki]], [[concepts/pkm]], [[entities/people/안드레이-카파시]]
 ---
 
 # 옵시디언으로 주식 분석 LLM Wiki 실전 적용

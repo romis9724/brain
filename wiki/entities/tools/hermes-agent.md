@@ -3,7 +3,6 @@ title: Hermes Agent (에르메스 에이전트)
 type: entity
 subtype: tool
 tags: [agent-cli, llm-wiki, 자동화]
-related: [[concepts/llm-wiki]], [[entities/tools/notebooklm]]
 ---
 
 # Hermes Agent (에르메스 에이전트)

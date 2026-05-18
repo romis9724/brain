@@ -3,7 +3,6 @@ title: qmd
 type: entity
 subtype: tool
 tags: [검색, 마크다운, cli, mcp]
-related: [[concepts/llm-wiki]]
 ---
 
 # qmd

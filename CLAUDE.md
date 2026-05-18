@@ -41,7 +41,6 @@ type: source
 date: YYYY-MM-DD
 source_file: raw/파일명.md
 tags: [태그1, 태그2]
-related: [[연관페이지1]], [[연관페이지2]]
 ---
 ```
 
@@ -51,7 +50,6 @@ related: [[연관페이지1]], [[연관페이지2]]
 title: 개념 이름
 type: concept
 tags: [태그1, 태그2]
-related: [[연관페이지1]]
 sources: [[출처페이지1]]
 ---
 ```
@@ -63,7 +61,6 @@ title: 엔티티 이름
 type: entity
 subtype: person | tool | project | company | book
 tags: [태그1]
-related: [[연관페이지1]]
 ---
 ```
 

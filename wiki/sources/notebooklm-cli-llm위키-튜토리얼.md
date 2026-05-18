@@ -7,7 +7,6 @@ origin: https://www.youtube.com/watch?v=UUNgWvVoT4E
 author: 배움의 달인 (AI·자동화)
 published: 2026-04-17
 tags: [llm-wiki, notebooklm, 옵시디언, hermes-agent, 자동화]
-related: [[concepts/llm-wiki]], [[entities/tools/notebooklm]], [[entities/tools/hermes-agent]]
 ---
 
 # NotebookLM CLI + LLM Wiki + 옵시디언 튜토리얼

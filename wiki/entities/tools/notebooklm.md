@@ -3,7 +3,6 @@ title: NotebookLM
 type: entity
 subtype: tool
 tags: [google, 리서치, ai-tool]
-related: [[concepts/llm-wiki]], [[concepts/rag]]
 ---
 
 # NotebookLM

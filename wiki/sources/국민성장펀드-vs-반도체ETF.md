@@ -4,7 +4,6 @@ type: source
 date: 2026-05-12
 source_file: raw/external/youtube/국민성장펀드 vs 반도체 ETF  같은 3000만원, 5년 뒤 손에 쥐는 돈이 다릅니다.md
 tags: [ETF, 국민성장펀드, 반도체, 투자비교]
-related: [[wiki/concepts/자산배분]], [[wiki/concepts/코스피-투자전략]]
 ---
 
 # 국민성장펀드 vs 반도체 ETF — 같은 3000만원 5년 비교

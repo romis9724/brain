@@ -3,7 +3,6 @@ title: Obsidian Web Clipper
 type: entity
 subtype: tool
 tags: [obsidian, 자료수집, 브라우저확장]
-related: [[concepts/llm-wiki]]
 ---
 
 # Obsidian Web Clipper

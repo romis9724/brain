@@ -2,7 +2,6 @@
 title: LLM Wiki
 type: concept
 tags: [llm-wiki, 지식관리, 세컨드브레인, 핵심개념]
-related: [[concepts/rag]], [[concepts/pkm]], [[concepts/기술적-분석]]
 sources: [[sources/llm-wiki-카파시]], [[sources/notebooklm-cli-llm위키-튜토리얼]], [[sources/옵시디언-주식분석-llm위키]]
 ---
 

@@ -2,7 +2,6 @@
 title: PKM (Personal Knowledge Management)
 type: concept
 tags: [pkm, 지식관리, 세컨드브레인]
-related: [[concepts/llm-wiki]], [[concepts/rag]]
 sources: [[sources/옵시디언-주식분석-llm위키]]
 ---
 
