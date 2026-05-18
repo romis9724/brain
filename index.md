@@ -1,7 +1,7 @@
 ---
 updated: 2026-05-18
-total_pages: 63
-total_sources: 24
+total_pages: 65
+total_sources: 25
 ---
 
 # Index
@@ -16,7 +16,7 @@ total_sources: 24
 
 ---
 
-## Sources (24)
+## Sources (25)
 
 ### LLM / AI 지식관리 (5)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
@@ -31,6 +31,9 @@ total_sources: 24
 
 ### 기타 / 드라마 명대사 (1)
 - [[wiki/sources/드라마-명대사-나의해방일지-나의아저씨|드라마 명대사 — 나의 해방일지 & 나의 아저씨]] — 회차별 명대사 모음 (나무위키 클립)
+
+### 창업 / 화장품 (1)
+- [[wiki/sources/화장품창업-가이드-올코스|화장품창업가이드 QnA ATOZ — 올코스 10부작]] — 사업자등록·책임판매업자·OEM/ODM·가격책정·채널·해외진출 전 과정
 
 ### 투자 / 가상자산 — 데이트레이딩 (1)
 - [[wiki/sources/가상자산-데이트레이딩-전략|가상자산 데이트레이딩 전략]] — 이더리움·알트코인 대상 15분봉 기반 자동매매 전략 요약
@@ -60,7 +63,7 @@ total_sources: 24
 
 ---
 
-## Concepts (24)
+## Concepts (25)
 
 ### LLM / AI 지식관리 (8)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
@@ -74,6 +77,9 @@ total_sources: 24
 
 ### 부동산 / 도시 (1)
 - [[wiki/concepts/서울-부동산-도시전략|서울 부동산 & 도시 전략]] — 확장 강남 벨트, GTX 체크리스트, 반도체 벨트, 지방 도시 전략
+
+### 창업 / 화장품 (1)
+- [[wiki/concepts/화장품-창업-가이드|화장품 창업 가이드]] — 책임판매업자·OEM/ODM·가격책정·채널전략·죽음의 계곡·해외 우선 전략
 
 ### 투자 / 트레이딩 — 기술적 분석 (8)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
