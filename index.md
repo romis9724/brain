@@ -1,6 +1,6 @@
 ---
 updated: 2026-05-18
-total_pages: 56
+total_pages: 59
 total_sources: 19
 ---
 
@@ -54,12 +54,14 @@ total_sources: 19
 
 ## Concepts (15)
 
-### LLM / AI 지식관리 (5)
+### LLM / AI 지식관리 (7)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
 - [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 상세
 - [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, LLM Wiki)
 - [[wiki/concepts/spring-ai|Spring AI]] — Java/Spring 생태계 AI 통합 프레임워크, Advisor Chain + Portable API
 - [[wiki/concepts/langchain4j|Langchain4j]] — Java용 LLM 통합 프레임워크, AiServices Reflection 기반 프록시 패턴
+- [[wiki/concepts/huggingface-embedding|HuggingFace 임베딩]] — sentence-transformers, MTEB 벤치마크, 한국어 임베딩 모델, ONNX 변환
+- [[wiki/concepts/huggingface-rag|HuggingFace 모델 RAG]] — HuggingFace 임베딩·LLM을 활용한 RAG 구현, 벡터 DB 연동, Spring AI 연동
 
 ### 투자 / 트레이딩 — 기술적 분석 (7)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
@@ -92,7 +94,7 @@ total_sources: 19
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
 - [[wiki/entities/people/송팀장|송팀장]] — 미국 ETF·거시경제 유튜버, 지수 구조 분석 중심
 
-### Tools (6)
+### Tools (7)
 
 - [[wiki/entities/tools/notebooklm|NotebookLM]] — Google의 소스 기반 AI 리서치 도구, CLI 연동 가능
 - [[wiki/entities/tools/obsidian-web-clipper|Obsidian Web Clipper]] — 웹 페이지를 마크다운으로 변환해 vault에 저장하는 브라우저 확장
@@ -100,5 +102,6 @@ total_sources: 19
 - [[wiki/entities/tools/hermes-agent|Hermes Agent]] — LLM Wiki 스킬이 내장된 에이전트 CLI
 - [[wiki/entities/tools/ollama|Ollama]] — 로컬 환경에서 오픈소스 LLM을 쉽게 다운로드·실행·관리하는 도구
 - [[wiki/entities/tools/egovframe|eGovFrame]] — 대한민국 전자정부 표준프레임워크, Spring AI/Langchain4j 공식 지원 (v5.0.0)
+- [[wiki/entities/tools/huggingface|HuggingFace]] — ML 모델·데이터셋·데모 플랫폼 ("AI의 GitHub"), transformers 등 핵심 라이브러리 운영
 
 ### Projects

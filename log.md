@@ -77,6 +77,17 @@
 - 총 wiki 페이지: 50 → 56 (+6), 총 소스: 18 → 19 (+1)
 - 주요 인사이트: Spring AI(Advisor Chain) vs Langchain4j(AiServices 프록시) 패턴 비교 수록
 
+## [2026-05-18] query | HuggingFace 종합 정리
+
+- 요청 항목: 플랫폼 개요, Hub 기능, 라이브러리 생태계, 임베딩 특화, RAG 활용, 서비스/인프라, 오픈소스 LLM, Spring AI/Java 연동, 라이선스, 비용 구조
+- 신규 생성:
+  - `wiki/entities/tools/huggingface.md` — 플랫폼 전체 개요 (역사·펀딩·Hub 3종·라이브러리 10종·오픈소스 LLM·인프라·라이선스·비용)
+  - `wiki/concepts/huggingface-embedding.md` — sentence-transformers 상세, MTEB 벤치마크, 주요 임베딩 모델, ONNX 변환 방법
+  - `wiki/concepts/huggingface-rag.md` — HuggingFace 모델 RAG 구현 (LangChain·Spring AI·Java 연동, 벡터 DB 선택 가이드, 고급 RAG 패턴)
+- 업데이트: `wiki/overview.md`, `index.md`
+- 총 wiki 페이지: 56 → 59 (+3), 도구: 6 → 7 (+1)
+- Spring AI [[concepts/spring-ai]], RAG [[concepts/rag]], Ollama [[entities/tools/ollama]] 기존 페이지와 양방향 크로스 레퍼런스 완료
+
 ## [2026-05-17] ingest | 나스닥 ETF 룰 변경 — 송팀장
 
 - 원본: `raw/external/송팀장/나스닥 ETF 룰이 바뀌었습니다 — 지금 적립 중이라면 꼭 보세요.md`
