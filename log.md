@@ -63,6 +63,17 @@
 - 출처: 247개 영상 ingest 기반 wiki 통합 정보
 - 저장 페이지: `wiki/concepts/코인-자동매매-데이트레이딩-추천전략.md` (신규 생성)
 
+## [2026-05-18] lint | wiki 건강 검진
+
+- 전체 검사 파일: 53개
+- 깨진 링크: 0개 ✓
+- 고아 페이지: 0개 ✓
+- 통계 불일치 수정:
+  - `index.md` total_pages 59→53, total_sources 19→20
+  - `index.md` ## Sources (16)→(20), ## Concepts (15)→(22), ### 기술적 분석 (7)→(8)
+  - `overview.md` source_count 19→20, page_count 59→53, 통계 테이블 동기화
+- 결론: 링크 무결성 이상 없음. 누적 오버카운트 수정 완료
+
 ## [2026-05-18] ingest | Spring AI 및 Langchain4j를 활용한 생성형 AI 및 RAG 지원 (eGovFrame 세미나)
 
 - 원본: `raw/informations/(6부) Spring AI 및 Langchain4j를 활용한 생성형 AI 및 RAG 지원.pdf`

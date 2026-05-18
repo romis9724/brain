@@ -1,7 +1,7 @@
 ---
 updated: 2026-05-18
-total_pages: 59
-total_sources: 19
+total_pages: 53
+total_sources: 20
 ---
 
 # Index
@@ -16,7 +16,7 @@ total_sources: 19
 
 ---
 
-## Sources (16)
+## Sources (20)
 
 ### LLM / AI 지식관리 (4)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
@@ -52,7 +52,7 @@ total_sources: 19
 
 ---
 
-## Concepts (15)
+## Concepts (22)
 
 ### LLM / AI 지식관리 (7)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
@@ -63,7 +63,7 @@ total_sources: 19
 - [[wiki/concepts/huggingface-embedding|HuggingFace 임베딩]] — sentence-transformers, MTEB 벤치마크, 한국어 임베딩 모델, ONNX 변환
 - [[wiki/concepts/huggingface-rag|HuggingFace 모델 RAG]] — HuggingFace 임베딩·LLM을 활용한 RAG 구현, 벡터 DB 연동, Spring AI 연동
 
-### 투자 / 트레이딩 — 기술적 분석 (7)
+### 투자 / 트레이딩 — 기술적 분석 (8)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
 - [[wiki/concepts/데이트레이딩|데이트레이딩]] — 당일 포지션 청산을 목표로 하는 단기 매매 전략
 - [[wiki/concepts/스캘핑|스캘핑]] — 1~5분봉 초단기 반복 매매, 소폭 수익 누적 전략 (신규)
