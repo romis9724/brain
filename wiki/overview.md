@@ -1,7 +1,7 @@
 ---
 updated: 2026-06-08
-source_count: 29
-page_count: 74
+source_count: 30
+page_count: 76
 ---
 
 # Overview
@@ -97,9 +97,9 @@ xAI Grok Imagine Video 1.5 레퍼런스 가이드. Aurora MoE 엔진, 6가지 �
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 29 (sources 페이지 기준) |
-| wiki 페이지 | 74 |
+| 원본 자료 | 30 (sources 페이지 기준) |
+| wiki 페이지 | 76 |
 | 도메인 | 9 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품) |
-| 인물 | 8 (Andrej Karpathy, 김영익, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현) |
+| 인물 | 9 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현) |
 | 도구 | 7 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace) |
 | 처리된 원본 영상/문서 | 651개 (김영익 398개 + 코인매매전략 247개 + 단건 6개) |

@@ -1,7 +1,7 @@
 ---
 updated: 2026-06-08
-total_pages: 74
-total_sources: 29
+total_pages: 76
+total_sources: 30
 ---
 
 # Index
@@ -16,7 +16,7 @@ total_sources: 29
 
 ---
 
-## Sources (29)
+## Sources (30)
 
 ### LLM / AI 지식관리 (6)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
@@ -42,6 +42,9 @@ total_sources: 29
 
 ### 창업 / 화장품 (1)
 - [[wiki/sources/화장품창업-가이드-올코스|화장품창업가이드 QnA ATOZ — 올코스 10부작]] — 사업자등록·책임판매업자·OEM/ODM·가격책정·채널·해외진출 전 과정
+
+### 투자 / 거시경제 — 환율·물가 (1)
+- [[wiki/sources/원달러환율-2008금융위기-최고점-김광석|원달러 환율 2008 금융위기 최고점 — 김광석]] — 달러 인덱스 하락에도 원화 약세 구조, M2·재정적자·잠재성장률·FDI가 구조적 원인
 
 ### 투자 / 가상자산 — 데이트레이딩 (1)
 - [[wiki/sources/가상자산-데이트레이딩-전략|가상자산 데이트레이딩 전략]] — 이더리움·알트코인 대상 15분봉 기반 자동매매 전략 요약
@@ -116,10 +119,11 @@ total_sources: 29
 
 ## Entities
 
-### People (8)
+### People (9)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
+- [[wiki/entities/people/김광석|김광석]] — 한국경제산업연구원 경제연구실장, 환율·물가·잠재성장률 즉시 분석, 경읽남 채널
 - [[wiki/entities/people/송팀장|송팀장]] — 미국 ETF·거시경제 유튜버, 지수 구조 분석 중심
 - [[wiki/entities/people/민상기|민상기]] — 위노트 1인 창업가, AI로 학교 상담실 SaaS 개발, 월 2,000만 원
 - [[wiki/entities/people/하조은|하조은]] — 개발자·창업가 인터뷰 YouTube 채널 운영자
