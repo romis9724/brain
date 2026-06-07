@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-18
-total_pages: 65
-total_sources: 25
+updated: 2026-06-08
+total_pages: 74
+total_sources: 29
 ---
 
 # Index
@@ -16,14 +16,15 @@ total_sources: 25
 
 ---
 
-## Sources (25)
+## Sources (29)
 
-### LLM / AI 지식관리 (5)
+### LLM / AI 지식관리 (6)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
 - [[wiki/sources/notebooklm-cli-llm위키-튜토리얼|NotebookLM CLI + LLM Wiki 튜토리얼]] — NotebookLM CLI로 조사 결과를 LLM Wiki에 자동 저장하는 워크플로우
 - [[wiki/sources/옵시디언-주식분석-llm위키|옵시디언 주식 분석 LLM Wiki]] — Claude Code + 옵시디언으로 국내 주식 분석 LLM Wiki 구축 사례
 - [[wiki/sources/spring-ai-langchain4j-rag-egovframe|Spring AI & Langchain4j RAG (eGovFrame)]] — Spring AI / Langchain4j 기반 생성형 AI·RAG 구현 실무 (eGovFrame 5.0.0 공식 지원)
 - [[wiki/sources/위노트-saas-1인창업-민상기|위노트 SaaS 1인창업 — 민상기 인터뷰]] — AI(Claude Code)로 혼자 만든 학교 상담실 SaaS, 월 2,000만 원 달성 사례
+- [[wiki/sources/adaptive-chunking-rag|Adaptive Chunking — RAG 청킹 최적화]] — 문서별 최적 청킹 자동 선택 프레임워크, LREC 2026 채택 논문, 5가지 내재적 지표
 
 ### 부동산 / 도시 — 김시덕 (2)
 - [[wiki/sources/김시덕-서울확장-부동산전략|김시덕 — 서울 확장 & 부동산 전략]] — 서울 남쪽 확장, 반도체 벨트, GTX 영향, 성장 지역 분석 (18개 영상)
@@ -31,6 +32,13 @@ total_sources: 25
 
 ### 기타 / 드라마 명대사 (1)
 - [[wiki/sources/드라마-명대사-나의해방일지-나의아저씨|드라마 명대사 — 나의 해방일지 & 나의 아저씨]] — 회차별 명대사 모음 (나무위키 클립)
+
+### AI 창업 / 경영 (2)
+- [[wiki/sources/ai-네이티브-기업-노정석-비팩토리|AI 네이티브 기업 — 노정석 대표 (비팩토리)]] — 업무 70~80% 에이전트 대체, 아이언맨 수트 비유, 또라이 지수 채용 기준
+- [[wiki/sources/ai-데이터센터-병목-김지현|AI 데이터센터 병목 — 김지현 SK 부사장]] — 4단계 병목 구조, 토큰 이코노미 3대 지표, 메모리 꽃놀이패, 5단 케이크 투자 지도
+
+### AI 도구 (1)
+- [[wiki/sources/grok-imagine-video-1-5|Grok Imagine Video 1.5]] — xAI Aurora MoE 엔진, 720p, 6가지 생성 모드, 네이티브 오디오, 프롬프트 작성법
 
 ### 창업 / 화장품 (1)
 - [[wiki/sources/화장품창업-가이드-올코스|화장품창업가이드 QnA ATOZ — 올코스 10부작]] — 사업자등록·책임판매업자·OEM/ODM·가격책정·채널·해외진출 전 과정
@@ -63,17 +71,19 @@ total_sources: 25
 
 ---
 
-## Concepts (25)
+## Concepts (28)
 
-### LLM / AI 지식관리 (8)
+### LLM / AI 지식관리 (10)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
-- [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 상세
+- [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 + Adaptive Chunking 추가
 - [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, LLM Wiki)
 - [[wiki/concepts/spring-ai|Spring AI]] — Java/Spring 생태계 AI 통합 프레임워크, Advisor Chain + Portable API
 - [[wiki/concepts/langchain4j|Langchain4j]] — Java용 LLM 통합 프레임워크, AiServices Reflection 기반 프록시 패턴
 - [[wiki/concepts/huggingface-embedding|HuggingFace 임베딩]] — sentence-transformers, MTEB 벤치마크, 한국어 임베딩 모델, ONNX 변환
 - [[wiki/concepts/huggingface-rag|HuggingFace 모델 RAG]] — HuggingFace 임베딩·LLM을 활용한 RAG 구현, 벡터 DB 연동, Spring AI 연동
 - [[wiki/concepts/1인-saas-창업|AI 시대 1인 SaaS 창업]] — PMF 검증, 오버 엔지니어링 회피, 해자 전략, Claude Code 개발 루틴
+- [[wiki/concepts/ai-네이티브-경영|AI 네이티브 경영]] — 업무 70~80% 에이전트 대체, 주관식→객관식 전환, 또라이 지수 채용 기준
+- [[wiki/concepts/ai-인프라-토큰-이코노미|AI 인프라 & 토큰 이코노미]] — 4단계 병목(반도체→전력→네트워크→데이터), 메모리 꽃놀이패, 5단 케이크
 
 ### 부동산 / 도시 (1)
 - [[wiki/concepts/서울-부동산-도시전략|서울 부동산 & 도시 전략]] — 확장 강남 벨트, GTX 체크리스트, 반도체 벨트, 지방 도시 전략
@@ -106,7 +116,7 @@ total_sources: 25
 
 ## Entities
 
-### People (6)
+### People (8)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
@@ -114,6 +124,8 @@ total_sources: 25
 - [[wiki/entities/people/민상기|민상기]] — 위노트 1인 창업가, AI로 학교 상담실 SaaS 개발, 월 2,000만 원
 - [[wiki/entities/people/하조은|하조은]] — 개발자·창업가 인터뷰 YouTube 채널 운영자
 - [[wiki/entities/people/김시덕|김시덕]] — 도시문헌학자, 서울·수도권 부동산 실증 분석, 저서 『한국 도시 2026』
+- [[wiki/entities/people/노정석|노정석]] — 비팩토리 대표, 연쇄창업가, 한국 최초 구글 매각, AI 네이티브 경영 실험
+- [[wiki/entities/people/김지현|김지현]] — SK 부사장, AI 인프라·토큰 이코노미 전문가, 티타임즈TV 정기 출연
 
 ### Tools (7)
 

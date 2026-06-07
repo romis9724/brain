@@ -1,8 +1,8 @@
 ---
 title: RAG (Retrieval-Augmented Generation)
 type: concept
-tags: [rag, llm, 지식관리, spring-ai]
-sources: [[sources/llm-wiki-카파시], [sources/spring-ai-langchain4j-rag-egovframe]]
+tags: [rag, llm, 지식관리, spring-ai, 청킹, adaptive-chunking]
+sources: [[sources/llm-wiki-카파시], [sources/spring-ai-langchain4j-rag-egovframe], [sources/adaptive-chunking-rag]]
 ---
 
 # RAG — 검색 증강 생성
@@ -80,8 +80,24 @@ index.md를 통한 카탈로그 기반 내비게이션.
 소규모(~100개 소스, 수백 페이지)에서는 임베딩 RAG 없이도 충분히 동작.
 대규모에서는 qmd([[entities/tools/qmd]]) 같은 로컬 검색 엔진으로 확장.
 
+## Adaptive Chunking — 청킹 최적화 (LREC 2026)
+
+기존 청킹 방식의 공통 한계: **모든 문서에 하나의 전략 강제**. Ekimetrics 연구팀이 제안한 Adaptive Chunking은 문서별로 최적 청킹 방법을 자동 선택한다.
+
+**5가지 내재적 품질 지표** (정답 없이 계산):
+- RC: 개체-대명사 쌍이 같은 청크 안에 보존되는 비율
+- BI: 단락·표 등 구조 블록 무결성
+- ICC: 청크 내 문장들의 의미 응집성
+- DCC: 청크와 주변 컨텍스트 윈도우의 의미 일관성
+- SC: 100~1,100 토큰 범위 준수 비율
+
+**성능**: RAG 종합 성능 62% → 72%, 답변 가능 질문 49개 → 65개. 내재적 지표 0.4~2.4pp 차이가 RAG 성능 8~10pp 차이로 **증폭**.
+
+**실용 원칙**: 항상 크기 정규화(후처리)할 것. 단일 지표 최적화 금지. → [[sources/adaptive-chunking-rag]]
+
 ## 연결
 
 - [[concepts/llm-wiki]] — RAG의 한계를 극복하는 패턴
 - [[concepts/spring-ai]] — Spring AI에서의 RAG 구현 상세
 - [[concepts/langchain4j]] — Langchain4j에서의 RAG 구현
+- [[sources/adaptive-chunking-rag]] — Adaptive Chunking 논문 상세

@@ -1,7 +1,7 @@
 ---
-updated: 2026-05-18
-source_count: 25
-page_count: 65
+updated: 2026-06-08
+source_count: 29
+page_count: 74
 ---
 
 # Overview
@@ -18,10 +18,11 @@ Romis의 세컨드 브레인 현황 요약.
 [[entities/people/안드레이-카파시]]가 제안한 패턴과 실전 구현 사례 두 건이 수록됨.
 추가로 eGovFrame 세미나 자료에서 Spring AI / Langchain4j 기반 RAG 실무 구현 방법 수록.
 HuggingFace 플랫폼 종합 정리(플랫폼 개요·Hub·라이브러리·임베딩·RAG·Spring AI 연동·라이선스·비용) 신규 추가.
+**Adaptive Chunking (LREC 2026)**: RAG 청킹 단계를 문서별 최적 전략으로 자동 선택하는 프레임워크 추가. 모델 변경 없이 RAG 성능 62%→72% 향상 사례.
 
 → 핵심 개념: [[concepts/llm-wiki]], [[concepts/rag]], [[concepts/pkm]], [[concepts/spring-ai]], [[concepts/langchain4j]], [[concepts/huggingface-embedding]], [[concepts/huggingface-rag]]
 → 관련 도구: [[entities/tools/notebooklm]], [[entities/tools/obsidian-web-clipper]], [[entities/tools/qmd]], [[entities/tools/hermes-agent]], [[entities/tools/ollama]], [[entities/tools/egovframe]], [[entities/tools/huggingface]]
-→ 원본 자료: [[sources/llm-wiki-카파시]], [[sources/notebooklm-cli-llm위키-튜토리얼]], [[sources/옵시디언-주식분석-llm위키]], [[sources/spring-ai-langchain4j-rag-egovframe]]
+→ 원본 자료: [[sources/llm-wiki-카파시]], [[sources/notebooklm-cli-llm위키-튜토리얼]], [[sources/옵시디언-주식분석-llm위키]], [[sources/spring-ai-langchain4j-rag-egovframe]], [[sources/adaptive-chunking-rag]]
 
 ### 투자 / 가상자산 — 데이트레이딩 (기존)
 이더리움·알트코인 데이트레이딩 전략에 관한 지식.
@@ -71,15 +72,34 @@ YouTube "코인 매매 전략" 검색으로 수집된 247개 영상에서 추출
   - [[sources/김영익-경제스쿨-특강]] — 한국경제 구조 분석, 노후투자, 자본주의 심층 강의
   - [[sources/김영익-2026년-전략]] — 2026년 글로벌 자산배분·ETF·돈의흐름
 
+### AI 창업 / 경영 (신규 확장)
+[[entities/people/민상기]]의 위노트 1인 SaaS 창업 사례에서 확장. **[[entities/people/노정석]] 비팩토리 대표**의 AI 네이티브 경영 실전 사례 추가. 업무의 70~80%를 AI 에이전트로 대체하는 운영 방식, 채용 기준 변화, 주니어 암묵지 소멸 문제 등.
+
+→ 핵심 개념: [[concepts/ai-네이티브-경영]], [[concepts/1인-saas-창업]]
+→ 핵심 인물: [[entities/people/노정석]], [[entities/people/민상기]]
+→ 원본 자료: [[sources/ai-네이티브-기업-노정석-비팩토리]]
+
+### AI 인프라 & 투자 (신규)
+[[entities/people/김지현]] SK 부사장의 토큰 이코노미 프레임. AI 데이터센터의 4단계 병목(반도체→전력→네트워크→데이터) 구조와 메모리 기업의 꽃놀이패 포지션 분석.
+
+→ 핵심 개념: [[concepts/ai-인프라-토큰-이코노미]]
+→ 핵심 인물: [[entities/people/김지현]]
+→ 원본 자료: [[sources/ai-데이터센터-병목-김지현]]
+
+### AI 도구 — 영상 생성 (신규)
+xAI Grok Imagine Video 1.5 레퍼런스 가이드. Aurora MoE 엔진, 6가지 생성 모드, 프롬프트 작성법.
+
+→ 원본 자료: [[sources/grok-imagine-video-1-5]]
+
 ---
 
 ## 통계
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 25 (sources 페이지 기준) |
-| wiki 페이지 | 65 |
-| 도메인 | 7 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, 부동산/도시, 창업/화장품) |
-| 인물 | 6 (Andrej Karpathy, 김영익, 송팀장, 민상기, 하조은, 김시덕) |
+| 원본 자료 | 29 (sources 페이지 기준) |
+| wiki 페이지 | 74 |
+| 도메인 | 9 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품) |
+| 인물 | 8 (Andrej Karpathy, 김영익, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현) |
 | 도구 | 7 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace) |
-| 처리된 원본 영상 | 647개 (김영익 398개 + 코인매매전략 247개 + 단건 2개) |
+| 처리된 원본 영상/문서 | 651개 (김영익 398개 + 코인매매전략 247개 + 단건 6개) |

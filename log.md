@@ -3,6 +3,14 @@
 작업 이력. Append-only — 기존 항목 수정·삭제 금지.
 형식: `## [YYYY-MM-DD] <타입> | <제목>`
 
+## [2026-06-08] ingest | AI 기술·창업·인프라 4건
+- 처리 파일: 4개 (Adaptive Chunking RAG 논문, AI 네이티브 기업 노정석, AI 데이터센터 김지현, Grok Imagine Video 1.5)
+- 생성 소스 페이지: 4개 (adaptive-chunking-rag, ai-네이티브-기업-노정석-비팩토리, ai-데이터센터-병목-김지현, grok-imagine-video-1-5)
+- 생성 개념 페이지: 2개 (ai-네이티브-경영, ai-인프라-토큰-이코노미)
+- 생성 엔티티: 2명 (노정석, 김지현)
+- 업데이트: rag.md (Adaptive Chunking 섹션 추가)
+- wiki 65→74 (+9), sources 25→29 (+4)
+
 ---
 
 ## [2026-05-15] ingest | 가상자산 데이트레이딩 자동매매 전략 요약
@@ -167,3 +175,10 @@
 - 신규 생성: `wiki/sources/국민성장펀드-vs-반도체ETF.md`
 - 연결 개념: `자산배분`, `코스피-투자전략`
 - 총 wiki 페이지: 43 → 44, 총 소스: 16 → 17
+
+## [2026-05-19] query | 청크 (Chunk) 개념 정리
+
+- 참조 페이지: `concepts/rag`, `concepts/huggingface-rag`, `sources/spring-ai-langchain4j-rag-egovframe`
+- wiki 현황: 청킹 전용 페이지 없음, 내용이 rag.md · huggingface-rag.md에 분산
+- 핵심 내용: RecursiveCharacterTextSplitter(chunk_size=500, overlap=50), ETL Splitter 역할
+- 미기록 항목: 의미 기반 청킹, 최적 size 기준, 한국어 형태소 고려사항, Spring AI 전용 Splitter
