@@ -189,3 +189,16 @@
 - wiki 현황: 청킹 전용 페이지 없음, 내용이 rag.md · huggingface-rag.md에 분산
 - 핵심 내용: RecursiveCharacterTextSplitter(chunk_size=500, overlap=50), ETL Splitter 역할
 - 미기록 항목: 의미 기반 청킹, 최적 size 기준, 한국어 형태소 고려사항, Spring AI 전용 Splitter
+
+## [2026-06-08] ingest | Lattice AI 한국 커뮤니티 뉴스 + 삼성노트 튜토리얼
+
+- 처리 파일: 2개 신규 (나머지 25개 untracked은 기존 ingest 완료 확인)
+  - `raw/external/KakaoTalk_Chat_[Lattice] AI 프론티어 그룹 - KOREA_2026-05-21-21-32-39.txt` (8,411줄)
+  - `raw/화장품/갤럭시에만 있는 삼성노트 메모앱 5가지 신기능.md`
+- 신규 생성 페이지:
+  - `wiki/sources/lattice-ai-커뮤니티-뉴스-2026-05.md`
+  - `wiki/sources/삼성노트-튜토리얼-디지털봄날.md`
+  - `wiki/entities/tools/lattice-log.md`
+- 업데이트: `wiki/overview.md`, `index.md`
+- 핵심 내용: DeepClaude (17배 비용 절감), Kimi K2.6 부상, OpenCode+DeepSeek 조합, ATLAS 트레이딩 에이전트
+- 총 sources: 30 → 32 (+2), wiki 페이지: 76 → 78 (+2), 도구: 7 → 8 (+1)

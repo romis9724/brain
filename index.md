@@ -1,7 +1,7 @@
 ---
 updated: 2026-06-08
-total_pages: 76
-total_sources: 30
+total_pages: 78
+total_sources: 32
 ---
 
 # Index
@@ -16,7 +16,7 @@ total_sources: 30
 
 ---
 
-## Sources (30)
+## Sources (32)
 
 ### LLM / AI 지식관리 (6)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
@@ -39,6 +39,12 @@ total_sources: 30
 
 ### AI 도구 (1)
 - [[wiki/sources/grok-imagine-video-1-5|Grok Imagine Video 1.5]] — xAI Aurora MoE 엔진, 720p, 6가지 생성 모드, 네이티브 오디오, 프롬프트 작성법
+
+### AI 커뮤니티 & 뉴스 (1)
+- [[wiki/sources/lattice-ai-커뮤니티-뉴스-2026-05|Lattice AI 프론티어 그룹 뉴스 (2026-05)]] — 한국 Claude Code 개발자 커뮤니티 채팅 아카이브, DeepClaude·Kimi K2.6·에이전트 최적화 등
+
+### 생산성 & 디지털 리터러시 (1)
+- [[wiki/sources/삼성노트-튜토리얼-디지털봄날|갤럭시 삼성노트 신기능 튜토리얼]] — 카메라 스캔·PDF 관리·키워드 검색·화면 서명·음성→텍스트 변환
 
 ### 창업 / 화장품 (1)
 - [[wiki/sources/화장품창업-가이드-올코스|화장품창업가이드 QnA ATOZ — 올코스 10부작]] — 사업자등록·책임판매업자·OEM/ODM·가격책정·채널·해외진출 전 과정
@@ -140,5 +146,6 @@ total_sources: 30
 - [[wiki/entities/tools/ollama|Ollama]] — 로컬 환경에서 오픈소스 LLM을 쉽게 다운로드·실행·관리하는 도구
 - [[wiki/entities/tools/egovframe|eGovFrame]] — 대한민국 전자정부 표준프레임워크, Spring AI/Langchain4j 공식 지원 (v5.0.0)
 - [[wiki/entities/tools/huggingface|HuggingFace]] — ML 모델·데이터셋·데모 플랫폼 ("AI의 GitHub"), transformers 등 핵심 라이브러리 운영
+- [[wiki/entities/tools/lattice-log|Lattice.log]] — 한국어 AI 뉴스 큐레이션 플랫폼, 150개+ 소스 자동 수집, 日 3~4회 발행
 
 ### Projects

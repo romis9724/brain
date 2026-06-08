@@ -1,7 +1,7 @@
 ---
 updated: 2026-06-08
-source_count: 30
-page_count: 76
+source_count: 32
+page_count: 78
 ---
 
 # Overview
@@ -91,15 +91,23 @@ xAI Grok Imagine Video 1.5 레퍼런스 가이드. Aurora MoE 엔진, 6가지 �
 
 → 원본 자료: [[sources/grok-imagine-video-1-5]]
 
+### AI 커뮤니티 & 뉴스 (신규)
+한국 AI 개발자 커뮤니티 [[entities/tools/lattice-log]]의 2026-05 채팅 아카이브.
+Hacker News·GitHub Trending·arXiv 등 150개+ 소스를 일 3~4회 큐레이팅.
+**주요 인사이트**: DeepClaude (Claude Code 17배 비용 절감), Kimi K2.6 오픈 웨이트 모델 부상, OpenCode+DeepSeek V4 조합 (월 7,300원), 에이전트 워크플로우 최적화 (소형 모델 우선), AI 투자 에이전트 ATLAS.
+
+→ 핵심 도구: [[entities/tools/lattice-log]]
+→ 원본 자료: [[sources/lattice-ai-커뮤니티-뉴스-2026-05]]
+
 ---
 
 ## 통계
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 30 (sources 페이지 기준) |
-| wiki 페이지 | 76 |
-| 도메인 | 9 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품) |
+| 원본 자료 | 32 (sources 페이지 기준) |
+| wiki 페이지 | 78 |
+| 도메인 | 10 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티) |
 | 인물 | 9 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현) |
-| 도구 | 7 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace) |
-| 처리된 원본 영상/문서 | 651개 (김영익 398개 + 코인매매전략 247개 + 단건 6개) |
+| 도구 | 8 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log) |
+| 처리된 원본 영상/문서 | 651개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + 단건 6개) |
