@@ -202,3 +202,13 @@
 - 업데이트: `wiki/overview.md`, `index.md`
 - 핵심 내용: DeepClaude (17배 비용 절감), Kimi K2.6 부상, OpenCode+DeepSeek 조합, ATLAS 트레이딩 에이전트
 - 총 sources: 30 → 32 (+2), wiki 페이지: 76 → 78 (+2), 도구: 7 → 8 (+1)
+
+## [2026-06-10] ingest | Claude Fable 5 (미토스 클래스) 출시 리뷰 — 코드팩토리
+- 처리 파일: `raw/드디어 출시한 클로드 미토스.md` (1개)
+- 생성 페이지 (3개):
+  - `wiki/sources/클로드-페이블5-미토스-리뷰-코드팩토리.md`
+  - `wiki/entities/people/코드팩토리.md`
+  - `wiki/entities/tools/claude-fable5.md`
+- 업데이트: `wiki/overview.md`, `index.md`
+- 핵심 내용: Fable 5 = 미토스 클래스 첫 모델, thinking 14~25분(50k~100k 토큰), 서브에이전트 5개+ 병렬, Opus 대비 시각 완성도·보안 발견 건수 우위
+- 총 sources: 32 → 33 (+1), wiki 페이지: 78 → 81 (+3), 도구: 8 → 9 (+1), 인물: 9 → 10 (+1)

@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-08
-total_pages: 78
-total_sources: 32
+updated: 2026-06-10
+total_pages: 81
+total_sources: 33
 ---
 
 # Index
@@ -39,6 +39,9 @@ total_sources: 32
 
 ### AI 도구 (1)
 - [[wiki/sources/grok-imagine-video-1-5|Grok Imagine Video 1.5]] — xAI Aurora MoE 엔진, 720p, 6가지 생성 모드, 네이티브 오디오, 프롬프트 작성법
+
+### AI 모델 리뷰 (1)
+- [[wiki/sources/클로드-페이블5-미토스-리뷰-코드팩토리|Claude Fable 5 (미토스 클래스) 출시 리뷰 — 코드팩토리]] — Fable 5 vs Opus 4.6 비교: 생각 시간 14~25분, 서브에이전트 병렬, 보안 23건 발견, 미세 시각 우위
 
 ### AI 커뮤니티 & 뉴스 (1)
 - [[wiki/sources/lattice-ai-커뮤니티-뉴스-2026-05|Lattice AI 프론티어 그룹 뉴스 (2026-05)]] — 한국 Claude Code 개발자 커뮤니티 채팅 아카이브, DeepClaude·Kimi K2.6·에이전트 최적화 등
@@ -125,7 +128,7 @@ total_sources: 32
 
 ## Entities
 
-### People (9)
+### People (10)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
@@ -136,8 +139,9 @@ total_sources: 32
 - [[wiki/entities/people/김시덕|김시덕]] — 도시문헌학자, 서울·수도권 부동산 실증 분석, 저서 『한국 도시 2026』
 - [[wiki/entities/people/노정석|노정석]] — 비팩토리 대표, 연쇄창업가, 한국 최초 구글 매각, AI 네이티브 경영 실험
 - [[wiki/entities/people/김지현|김지현]] — SK 부사장, AI 인프라·토큰 이코노미 전문가, 티타임즈TV 정기 출연
+- [[wiki/entities/people/코드팩토리|코드팩토리]] — 한국 개발 교육 유튜브 채널, Claude Code·Flutter·NestJS·TypeScript 강의, 국내 최초 Claude Code 서적
 
-### Tools (7)
+### Tools (9)
 
 - [[wiki/entities/tools/notebooklm|NotebookLM]] — Google의 소스 기반 AI 리서치 도구, CLI 연동 가능
 - [[wiki/entities/tools/obsidian-web-clipper|Obsidian Web Clipper]] — 웹 페이지를 마크다운으로 변환해 vault에 저장하는 브라우저 확장
@@ -147,5 +151,6 @@ total_sources: 32
 - [[wiki/entities/tools/egovframe|eGovFrame]] — 대한민국 전자정부 표준프레임워크, Spring AI/Langchain4j 공식 지원 (v5.0.0)
 - [[wiki/entities/tools/huggingface|HuggingFace]] — ML 모델·데이터셋·데모 플랫폼 ("AI의 GitHub"), transformers 등 핵심 라이브러리 운영
 - [[wiki/entities/tools/lattice-log|Lattice.log]] — 한국어 AI 뉴스 큐레이션 플랫폼, 150개+ 소스 자동 수집, 日 3~4회 발행
+- [[wiki/entities/tools/claude-fable5|Claude Fable 5]] — Anthropic 미토스 클래스 첫 번째 모델, 서브에이전트 병렬 실행, 깊은 thinking (50k~100k 토큰)
 
 ### Projects

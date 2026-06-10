@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-08
-source_count: 32
-page_count: 78
+updated: 2026-06-10
+source_count: 33
+page_count: 81
 ---
 
 # Overview
@@ -91,6 +91,14 @@ xAI Grok Imagine Video 1.5 레퍼런스 가이드. Aurora MoE 엔진, 6가지 �
 
 → 원본 자료: [[sources/grok-imagine-video-1-5]]
 
+### AI 모델 — Claude 미토스 클래스 (신규)
+[[entities/people/코드팩토리]] 채널의 Claude Fable 5 출시 리뷰. Anthropic의 새 **미토스(Mythos) 클래스** 첫 번째 모델. Fable 5와 Opus 4.6을 Figma 클론·Notion 클론·보안 검사로 직접 비교.
+**핵심 인사이트**: Fable 5는 생각 시간 14~25분(50k~100k 토큰), 서브에이전트 5개+ 자동 병렬 실행. 결과물 품질은 비슷하되 시각적 완성도·보안 발견 건수에서 미세한 우위. 일반 바이브 코딩은 Opus로 충분, 중요 릴리스·심층 보안 검사에 Fable 5 권장.
+
+→ 핵심 도구: [[entities/tools/claude-fable5]]
+→ 핵심 인물: [[entities/people/코드팩토리]]
+→ 원본 자료: [[sources/클로드-페이블5-미토스-리뷰-코드팩토리]]
+
 ### AI 커뮤니티 & 뉴스 (신규)
 한국 AI 개발자 커뮤니티 [[entities/tools/lattice-log]]의 2026-05 채팅 아카이브.
 Hacker News·GitHub Trending·arXiv 등 150개+ 소스를 일 3~4회 큐레이팅.
@@ -105,9 +113,9 @@ Hacker News·GitHub Trending·arXiv 등 150개+ 소스를 일 3~4회 큐레이�
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 32 (sources 페이지 기준) |
-| wiki 페이지 | 78 |
-| 도메인 | 10 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티) |
-| 인물 | 9 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현) |
-| 도구 | 8 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log) |
-| 처리된 원본 영상/문서 | 651개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + 단건 6개) |
+| 원본 자료 | 33 (sources 페이지 기준) |
+| wiki 페이지 | 81 |
+| 도메인 | 11 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티, AI모델리뷰) |
+| 인물 | 10 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현, 코드팩토리) |
+| 도구 | 9 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log, Claude Fable 5) |
+| 처리된 원본 영상/문서 | 652개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + 단건 7개) |
