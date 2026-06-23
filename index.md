@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-10
-total_pages: 81
-total_sources: 33
+updated: 2026-06-23
+total_pages: 101
+total_sources: 41
 ---
 
 # Index
@@ -16,7 +16,7 @@ total_sources: 33
 
 ---
 
-## Sources (32)
+## Sources (41)
 
 ### LLM / AI 지식관리 (6)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
@@ -72,6 +72,16 @@ total_sources: 33
 - [[wiki/sources/코인매매-자동매매봇|코인매매 — 자동매매봇 전략]] — 파이썬 봇·챗GPT 자동화·마틴게일 실험 (~11개 영상 통합)
 - [[wiki/sources/코인매매-알트코인-종목별|코인매매 — 알트코인 종목별 전략]] — 이더리움·솔라나·도지·AI코인 개별 종목 분석 (~27개 영상 통합)
 
+### 투자 / 미국 소형주 데이트레이딩 — Day Trade Warrior (8)
+- [[wiki/sources/daytrade-warrior-모멘텀-브레이킹뉴스|Day Trade Warrior — 모멘텀 & 브레이킹뉴스 실전매매]] — 브레이킹뉴스 촉매 소형주 매매, 100~750% 급등 사례 (19개 영상 통합)
+- [[wiki/sources/daytrade-warrior-숏스퀴즈|Day Trade Warrior — 숏스퀴즈]] — 280%~2,000% 숏스퀴즈 실전 사례, 작동 원리와 진입 조건 (10개 영상)
+- [[wiki/sources/daytrade-warrior-손익회고|Day Trade Warrior — 수익 회고 (Green Day)]] — 일일 수익 회고, "명백한 종목 하나에만 집중" 원칙 (20+3개 영상)
+- [[wiki/sources/daytrade-warrior-손실회고|Day Trade Warrior — 손실 회고 & 리스크 교훈]] — 최대 손실 룰, 트레이더 리합, NO TRADE DAY (8개 영상)
+- [[wiki/sources/daytrade-warrior-소액계좌|Day Trade Warrior — 소액계좌 챌린지]] — $2,000 리셋 챌린지, PDT 규정 완화, 마이크로 풀백 전략 (4개 영상)
+- [[wiki/sources/daytrade-warrior-교육-전략|Day Trade Warrior — 교육 & 전략 강의]] — 캔들스틱·손실 5대 원인·리스크 관리 강의 (4개 영상)
+- [[wiki/sources/daytrade-warrior-spacex-ipo|Day Trade Warrior — SpaceX IPO 시리즈]] — 역사상 최대 IPO 준비·매매, $75,683 당일 수익 (5개 영상)
+- [[wiki/sources/daytrade-warrior-세금-라이프스타일|Day Trade Warrior — 트레이더 세금 & 라이프스타일]] — 푸에르토리코 Act 22, Mark-to-Market, 차량 트레이딩 (3개 영상)
+
 ### 투자 / 경제 분석 — 김영익 채널 (6)
 - [[wiki/sources/김영익-자산배분-투자전략|김영익 — 자산배분 & 포트폴리오]] — 주식50·채권30·대체15·현금5 기본 포트폴리오, 경기순환 리밸런싱 전략 (13개 영상)
 - [[wiki/sources/김영익-코스피-경기전망|김영익 — 코스피 & 경기 전망]] — 선행지수 기반 코스피 방향성, 월별·분기별 투자전략 (~170개 영상)
@@ -83,7 +93,7 @@ total_sources: 33
 
 ---
 
-## Concepts (28)
+## Concepts (34)
 
 ### LLM / AI 지식관리 (10)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
@@ -102,6 +112,14 @@ total_sources: 33
 
 ### 창업 / 화장품 (1)
 - [[wiki/concepts/화장품-창업-가이드|화장품 창업 가이드]] — 책임판매업자·OEM/ODM·가격책정·채널전략·죽음의 계곡·해외 우선 전략
+
+### 투자 / 미국 소형주 데이트레이딩 (6)
+- [[wiki/concepts/모멘텀-데이트레이딩|모멘텀 데이트레이딩 (미국 소형주)]] — 브레이킹뉴스 촉매·스캐너·당일 급등 소형주 공략 전략
+- [[wiki/concepts/숏스퀴즈|숏스퀴즈]] — 공매도 강제 커버로 수백~수천% 급등, 작동 원리·진입 조건·리스크
+- [[wiki/concepts/PDT-규정|PDT 규정 변경 (2026)]] — $25,000 → $2,000 완화, 25년 만의 규정 변경, 시장 영향
+- [[wiki/concepts/소액계좌-챌린지|소액계좌 챌린지]] — $2,000으로 시작하는 데이트레이딩 챌린지, 마이크로 풀백 전략
+- [[wiki/concepts/트레이더-리스크관리|트레이더 리스크 관리 & 최대손실 룰]] — Max Loss Rule·트레이더 리합·NO TRADE DAY
+- [[wiki/concepts/트레이더-세금전략|트레이더 세금 전략 (푸에르토리코)]] — Act 22 (자본이득 0%), Mark-to-Market, 손실 이월
 
 ### 투자 / 트레이딩 — 기술적 분석 (8)
 - [[wiki/concepts/기술적-분석|기술적 분석]] — 이동평균, RSI, MACD, 볼린저밴드 등 차트 분석 방법론
@@ -128,7 +146,7 @@ total_sources: 33
 
 ## Entities
 
-### People (10)
+### People (11)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
@@ -140,6 +158,7 @@ total_sources: 33
 - [[wiki/entities/people/노정석|노정석]] — 비팩토리 대표, 연쇄창업가, 한국 최초 구글 매각, AI 네이티브 경영 실험
 - [[wiki/entities/people/김지현|김지현]] — SK 부사장, AI 인프라·토큰 이코노미 전문가, 티타임즈TV 정기 출연
 - [[wiki/entities/people/코드팩토리|코드팩토리]] — 한국 개발 교육 유튜브 채널, Claude Code·Flutter·NestJS·TypeScript 강의, 국내 최초 Claude Code 서적
+- [[wiki/entities/people/ross-cameron|Ross Cameron (Day Trade Warrior)]] — 미국 소형주 모멘텀 데이트레이더, 600달러→2,000만 달러, Warrior Trading 운영
 
 ### Tools (9)
 

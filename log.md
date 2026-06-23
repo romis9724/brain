@@ -212,3 +212,26 @@
 - 업데이트: `wiki/overview.md`, `index.md`
 - 핵심 내용: Fable 5 = 미토스 클래스 첫 모델, thinking 14~25분(50k~100k 토큰), 서브에이전트 5개+ 병렬, Opus 대비 시각 완성도·보안 발견 건수 우위
 - 총 sources: 32 → 33 (+1), wiki 페이지: 78 → 81 (+3), 도구: 8 → 9 (+1), 인물: 9 → 10 (+1)
+
+## [2026-06-23] ingest | Day Trade Warrior 채널 77개 영상 — 미국 모멘텀 데이트레이딩
+- 처리: 77개 transcript (raw/external/DaytradeWarrior/)
+- 생성 sources 8개:
+  - `wiki/sources/daytrade-warrior-모멘텀-브레이킹뉴스.md` (19개 영상)
+  - `wiki/sources/daytrade-warrior-숏스퀴즈.md` (10개 영상)
+  - `wiki/sources/daytrade-warrior-손익회고.md` (23개 영상)
+  - `wiki/sources/daytrade-warrior-손실회고.md` (8개 영상)
+  - `wiki/sources/daytrade-warrior-소액계좌.md` (4개 영상)
+  - `wiki/sources/daytrade-warrior-교육-전략.md` (4개 영상)
+  - `wiki/sources/daytrade-warrior-spacex-ipo.md` (5개 영상)
+  - `wiki/sources/daytrade-warrior-세금-라이프스타일.md` (3개 영상)
+- 생성 concepts 6개:
+  - `wiki/concepts/모멘텀-데이트레이딩.md`
+  - `wiki/concepts/숏스퀴즈.md`
+  - `wiki/concepts/PDT-규정.md`
+  - `wiki/concepts/소액계좌-챌린지.md`
+  - `wiki/concepts/트레이더-리스크관리.md`
+  - `wiki/concepts/트레이더-세금전략.md`
+- 생성 entities 1개:
+  - `wiki/entities/people/ross-cameron.md`
+- 업데이트: `wiki/overview.md`, `index.md`
+- 총 sources: 33 → 41 (+8), wiki 페이지: 81 → 101 (+20), 인물: 10 → 11 (+1)

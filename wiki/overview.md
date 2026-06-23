@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-10
-source_count: 33
-page_count: 81
+updated: 2026-06-23
+source_count: 41
+page_count: 101
 ---
 
 # Overview
@@ -107,15 +107,38 @@ Hacker News·GitHub Trending·arXiv 등 150개+ 소스를 일 3~4회 큐레이�
 → 핵심 도구: [[entities/tools/lattice-log]]
 → 원본 자료: [[sources/lattice-ai-커뮤니티-뉴스-2026-05]]
 
+### 투자 / 미국 소형주 데이트레이딩 — Day Trade Warrior (신규 대규모 추가)
+[[entities/people/ross-cameron]] (Ross Cameron)의 Day Trade Warrior / Warrior Trading 채널 77개 영상 통합.
+미국 소형주 모멘텀 데이트레이딩, 숏스퀴즈, 소액계좌 챌린지, PDT 규정 완화(2026년 6월) 등이 핵심.
+"하루에 명백한 종목 하나에만 집중", "최대 손실 도달 시 즉각 중단" 원칙이 전체를 관통한다.
+
+→ 핵심 개념 (신규 6개):
+  - [[concepts/모멘텀-데이트레이딩]] — 브레이킹뉴스 촉매, 스캐너 기반 소형주 모멘텀 전략
+  - [[concepts/숏스퀴즈]] — 공매도 강제 커버로 수백~수천% 급등, 작동 원리와 매매법
+  - [[concepts/PDT-규정]] — 2026년 6월 $25,000 → $2,000 완화, 25년 만의 규정 변경
+  - [[concepts/소액계좌-챌린지]] — $2,000 리셋 챌린지, 마이크로 풀백 전략
+  - [[concepts/트레이더-리스크관리]] — 최대손실 룰, 트레이더 리합, NO TRADE DAY
+  - [[concepts/트레이더-세금전략]] — 푸에르토리코 Act 22, Mark-to-Market, 손실 이월
+→ 핵심 인물: [[entities/people/ross-cameron]]
+→ 원본 소스 (테마별 8개, 77개 영상 통합):
+  - [[sources/daytrade-warrior-모멘텀-브레이킹뉴스]] — 브레이킹뉴스·테마 촉매 실전 매매 (19개 영상)
+  - [[sources/daytrade-warrior-숏스퀴즈]] — 280%~2,000% 숏스퀴즈 사례 (10개 영상)
+  - [[sources/daytrade-warrior-손익회고]] — 수익일 회고 + 워치리스트 (20+3개 영상)
+  - [[sources/daytrade-warrior-손실회고]] — 손실일 회고, 리스크 교훈 (8개 영상)
+  - [[sources/daytrade-warrior-소액계좌]] — $2,000 소액 챌린지 (4개 영상)
+  - [[sources/daytrade-warrior-교육-전략]] — 캔들스틱·손실 5대 원인·리스크 관리 (4개 영상)
+  - [[sources/daytrade-warrior-spacex-ipo]] — SpaceX IPO 준비·매매 (5개 영상)
+  - [[sources/daytrade-warrior-세금-라이프스타일]] — 푸에르토리코·세금 전략·차량 트레이딩 (3개 영상)
+
 ---
 
 ## 통계
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 33 (sources 페이지 기준) |
-| wiki 페이지 | 81 |
-| 도메인 | 11 (LLM/AI 지식관리, 투자/가상자산, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티, AI모델리뷰) |
-| 인물 | 10 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현, 코드팩토리) |
+| 원본 자료 | 41 (sources 페이지 기준) |
+| wiki 페이지 | 101 |
+| 도메인 | 12 (LLM/AI 지식관리, 투자/가상자산, 투자/미국소형주데이트레이딩, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티, AI모델리뷰) |
+| 인물 | 11 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현, 코드팩토리, Ross Cameron) |
 | 도구 | 9 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log, Claude Fable 5) |
-| 처리된 원본 영상/문서 | 652개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + 단건 7개) |
+| 처리된 원본 영상/문서 | 729개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + DaytradeWarrior 77개 + 단건 7개) |
