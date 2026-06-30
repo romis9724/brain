@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-23
-source_count: 41
-page_count: 101
+updated: 2026-06-30
+source_count: 45
+page_count: 113
 ---
 
 # Overview
@@ -20,9 +20,11 @@ Romis의 세컨드 브레인 현황 요약.
 HuggingFace 플랫폼 종합 정리(플랫폼 개요·Hub·라이브러리·임베딩·RAG·Spring AI 연동·라이선스·비용) 신규 추가.
 **Adaptive Chunking (LREC 2026)**: RAG 청킹 단계를 문서별 최적 전략으로 자동 선택하는 프레임워크 추가. 모델 변경 없이 RAG 성능 62%→72% 향상 사례.
 
-→ 핵심 개념: [[concepts/llm-wiki]], [[concepts/rag]], [[concepts/pkm]], [[concepts/spring-ai]], [[concepts/langchain4j]], [[concepts/huggingface-embedding]], [[concepts/huggingface-rag]]
-→ 관련 도구: [[entities/tools/notebooklm]], [[entities/tools/obsidian-web-clipper]], [[entities/tools/qmd]], [[entities/tools/hermes-agent]], [[entities/tools/ollama]], [[entities/tools/egovframe]], [[entities/tools/huggingface]]
-→ 원본 자료: [[sources/llm-wiki-카파시]], [[sources/notebooklm-cli-llm위키-튜토리얼]], [[sources/옵시디언-주식분석-llm위키]], [[sources/spring-ai-langchain4j-rag-egovframe]], [[sources/adaptive-chunking-rag]]
+**세컨드 브레인 · 제텔카스텐 (신규)**: 이 브레인의 뿌리가 되는 PKM 방법론 보강. Tiago Forte의 세컨드 브레인, Niklas Luhmann의 제텔카스텐, DIKW 위계, 연구자용 옵시디언+Zotero 워크플로우를 추가.
+
+→ 핵심 개념: [[concepts/llm-wiki]], [[concepts/rag]], [[concepts/pkm]], [[concepts/제텔카스텐]], [[concepts/spring-ai]], [[concepts/langchain4j]], [[concepts/huggingface-embedding]], [[concepts/huggingface-rag]]
+→ 관련 도구: [[entities/tools/notebooklm]], [[entities/tools/obsidian-web-clipper]], [[entities/tools/zotero]], [[entities/tools/qmd]], [[entities/tools/hermes-agent]], [[entities/tools/ollama]], [[entities/tools/egovframe]], [[entities/tools/huggingface]]
+→ 원본 자료: [[sources/llm-wiki-카파시]], [[sources/notebooklm-cli-llm위키-튜토리얼]], [[sources/옵시디언-주식분석-llm위키]], [[sources/spring-ai-langchain4j-rag-egovframe]], [[sources/adaptive-chunking-rag]], [[sources/세컨드브레인-제텔카스텐-개론]]
 
 ### 투자 / 가상자산 — 데이트레이딩 (기존)
 이더리움·알트코인 데이트레이딩 전략에 관한 지식.
@@ -130,15 +132,35 @@ Hacker News·GitHub Trending·arXiv 등 150개+ 소스를 일 3~4회 큐레이�
   - [[sources/daytrade-warrior-spacex-ipo]] — SpaceX IPO 준비·매매 (5개 영상)
   - [[sources/daytrade-warrior-세금-라이프스타일]] — 푸에르토리코·세금 전략·차량 트레이딩 (3개 영상)
 
+### AI 코딩 워크플로우 — 루프 엔지니어링 (신규)
+[[entities/people/addy-osmani|Addy Osmani]]가 제시한 **루프 엔지니어링**. 코딩 에이전트를 매번 지시하는 대신 일을 찾고·나누고·검증하는 반복 시스템으로 설계하는 관점. 자동 실행·워크트리·스킬·서브에이전트·외부 메모리가 구성 요소이며, **작성자–검증자 분리**와 **외부 메모리 유지**가 핵심 원칙. 이 세컨드 브레인 자체가 그 구현체(스킬=CLAUDE.md, 외부 메모리=wiki/log).
+
+→ 핵심 개념: [[concepts/루프-엔지니어링]]
+→ 핵심 인물: [[entities/people/addy-osmani]]
+→ 원본 자료: [[sources/loop-engineering-addy-osmani]]
+
+### AI 콘텐츠 제작 자동화 (신규)
+[[entities/people/김솔|김솔]]이 Codex로 육아기록을 인스타툰으로 변환·게시해 6주간 333만 조회를 만든 사례. AI를 "변환기·실행기"로 쓰고, 기록→제작→게시→데이터분석→소재선정의 운영 루프가 병목이자 자산. 공유·저장 지표를 조회수보다 중시.
+
+→ 핵심 개념: [[concepts/ai-콘텐츠-제작-자동화]]
+→ 핵심 인물: [[entities/people/김솔]]
+→ 원본 자료: [[sources/ai-인스타툰-codex-김솔]]
+
+### 업무 도구 — 근태·인사관리 SaaS (신규)
+근태관리 SaaS [[entities/tools/shiftee|시프티(Shiftee)]] 시작하기 가이드. 회사 생성→직원 합류 모델, 좌표/WiFi 출퇴근 인증, 전자결재, 엑셀/API 데이터 마이그레이션. 소규모 사업의 인력 운영 자동화 후보.
+
+→ 핵심 도구: [[entities/tools/shiftee]]
+→ 원본 자료: [[sources/시프티-시작하기-가이드]]
+
 ---
 
 ## 통계
 
 | 항목 | 수량 |
 |------|------|
-| 원본 자료 | 41 (sources 페이지 기준) |
-| wiki 페이지 | 101 |
-| 도메인 | 12 (LLM/AI 지식관리, 투자/가상자산, 투자/미국소형주데이트레이딩, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티, AI모델리뷰) |
-| 인물 | 11 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현, 코드팩토리, Ross Cameron) |
-| 도구 | 9 (NotebookLM, Web Clipper, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log, Claude Fable 5) |
-| 처리된 원본 영상/문서 | 729개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + DaytradeWarrior 77개 + 단건 7개) |
+| 원본 자료 | 45 (sources 페이지 기준) |
+| wiki 페이지 | 113 |
+| 도메인 | 15 (LLM/AI 지식관리, AI코딩워크플로우, AI콘텐츠자동화, 업무도구, 투자/가상자산, 투자/미국소형주데이트레이딩, 투자/경제분석, 투자/미국ETF, AI창업, AI네이티브경영, AI인프라투자, 부동산/도시, 창업/화장품, AI커뮤니티, AI모델리뷰) |
+| 인물 | 14 (Andrej Karpathy, 김영익, 김광석, 송팀장, 민상기, 하조은, 김시덕, 노정석, 김지현, 코드팩토리, Ross Cameron, Addy Osmani, 김솔, 브레인 트리니티) |
+| 도구 | 11 (NotebookLM, Web Clipper, Zotero, qmd, Hermes Agent, Ollama, eGovFrame, HuggingFace, Lattice.log, Claude Fable 5, 시프티) |
+| 처리된 원본 영상/문서 | 733개 + 채팅 로그 1개 (김영익 398개 + 코인매매전략 247개 + DaytradeWarrior 77개 + 단건 11개) |

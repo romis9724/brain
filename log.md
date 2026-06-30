@@ -235,3 +235,25 @@
   - `wiki/entities/people/ross-cameron.md`
 - 업데이트: `wiki/overview.md`, `index.md`
 - 총 sources: 33 → 41 (+8), wiki 페이지: 81 → 101 (+20), 인물: 10 → 11 (+1)
+
+## [2026-06-30] ingest | AI 워크플로우·PKM·근태 SaaS 4건
+- 처리 파일 4건: Loop Engineering(Addy Osmani), AI 인스타툰(김솔), 세컨드 브레인 개론(브레인 트리니티), 시프티 시작하기(8개 문서)
+- 생성 sources 4개:
+  - `wiki/sources/loop-engineering-addy-osmani.md`
+  - `wiki/sources/ai-인스타툰-codex-김솔.md`
+  - `wiki/sources/세컨드브레인-제텔카스텐-개론.md`
+  - `wiki/sources/시프티-시작하기-가이드.md`
+- 생성 concepts 3개:
+  - `wiki/concepts/루프-엔지니어링.md`
+  - `wiki/concepts/ai-콘텐츠-제작-자동화.md`
+  - `wiki/concepts/제텔카스텐.md`
+- 업데이트 concepts 1개: `wiki/concepts/pkm.md` (세컨드 브레인·제텔카스텐·DIKW·연구자 워크플로우 보강)
+- 생성 entities 5개:
+  - `wiki/entities/people/addy-osmani.md`
+  - `wiki/entities/people/김솔.md`
+  - `wiki/entities/people/브레인-트리니티.md`
+  - `wiki/entities/tools/zotero.md`
+  - `wiki/entities/tools/shiftee.md`
+- 업데이트: `wiki/overview.md`, `index.md`
+- 핵심 연결: 루프 엔지니어링·세컨드 브레인·LLM Wiki가 이 브레인의 작동 원리와 직접 대응
+- 총 sources: 41 → 45 (+4), wiki 페이지: 101 → 113 (+12), 인물: 11 → 14 (+3), 도구: 9 → 11 (+2)

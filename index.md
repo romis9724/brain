@@ -1,7 +1,7 @@
 ---
-updated: 2026-06-23
-total_pages: 101
-total_sources: 41
+updated: 2026-06-30
+total_pages: 113
+total_sources: 45
 ---
 
 # Index
@@ -16,15 +16,23 @@ total_sources: 41
 
 ---
 
-## Sources (41)
+## Sources (45)
 
-### LLM / AI 지식관리 (6)
+### LLM / AI 지식관리 (7)
 - [[wiki/sources/llm-wiki-카파시|LLM Wiki (Karpathy 원본)]] — Andrej Karpathy가 제안한 LLM 기반 지식 베이스 패턴 원본 문서
 - [[wiki/sources/notebooklm-cli-llm위키-튜토리얼|NotebookLM CLI + LLM Wiki 튜토리얼]] — NotebookLM CLI로 조사 결과를 LLM Wiki에 자동 저장하는 워크플로우
 - [[wiki/sources/옵시디언-주식분석-llm위키|옵시디언 주식 분석 LLM Wiki]] — Claude Code + 옵시디언으로 국내 주식 분석 LLM Wiki 구축 사례
 - [[wiki/sources/spring-ai-langchain4j-rag-egovframe|Spring AI & Langchain4j RAG (eGovFrame)]] — Spring AI / Langchain4j 기반 생성형 AI·RAG 구현 실무 (eGovFrame 5.0.0 공식 지원)
 - [[wiki/sources/위노트-saas-1인창업-민상기|위노트 SaaS 1인창업 — 민상기 인터뷰]] — AI(Claude Code)로 혼자 만든 학교 상담실 SaaS, 월 2,000만 원 달성 사례
 - [[wiki/sources/adaptive-chunking-rag|Adaptive Chunking — RAG 청킹 최적화]] — 문서별 최적 청킹 자동 선택 프레임워크, LREC 2026 채택 논문, 5가지 내재적 지표
+- [[wiki/sources/세컨드브레인-제텔카스텐-개론|세컨드 브레인 & 제텔카스텐 개론]] — Tiago Forte 세컨드 브레인, Niklas Luhmann 제텔카스텐, DIKW, 연구자 옵시디언+Zotero 워크플로우
+
+### AI 코딩 워크플로우 & 콘텐츠 자동화 (2)
+- [[wiki/sources/loop-engineering-addy-osmani|Loop Engineering — Addy Osmani]] — 코딩 에이전트를 반복 시스템으로 설계하는 루프 엔지니어링, 작성자–검증자 분리·외부 메모리
+- [[wiki/sources/ai-인스타툰-codex-김솔|AI 인스타툰 — 6주 333만 조회 (김솔)]] — Codex로 육아기록을 인스타툰으로 변환·게시 자동화, 데이터 기반 콘텐츠 개선
+
+### 업무 도구 — 근태·인사관리 (1)
+- [[wiki/sources/시프티-시작하기-가이드|시프티(Shiftee) 시작하기 가이드]] — 근태관리 SaaS 온보딩 5단계, 출퇴근 인증, 전자결재, 엑셀/API 데이터 마이그레이션
 
 ### 부동산 / 도시 — 김시덕 (2)
 - [[wiki/sources/김시덕-서울확장-부동산전략|김시덕 — 서울 확장 & 부동산 전략]] — 서울 남쪽 확장, 반도체 벨트, GTX 영향, 성장 지역 분석 (18개 영상)
@@ -93,12 +101,13 @@ total_sources: 41
 
 ---
 
-## Concepts (34)
+## Concepts (37)
 
-### LLM / AI 지식관리 (10)
+### LLM / AI 지식관리 (11)
 - [[wiki/concepts/llm-wiki|LLM Wiki]] — LLM이 영구적으로 유지하는 위키 기반 지식 관리 패턴 (이 브레인의 핵심 원리)
 - [[wiki/concepts/rag|RAG]] — 검색 증강 생성 방식, 3단계 프로세스, Spring AI 구현 + Adaptive Chunking 추가
-- [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, LLM Wiki)
+- [[wiki/concepts/pkm|PKM]] — 개인 지식 관리 프레임워크 비교 (PARA, ACE, 세컨드 브레인, 제텔카스텐, LLM Wiki) + DIKW·연구자 워크플로우
+- [[wiki/concepts/제텔카스텐|제텔카스텐 (Zettelkasten)]] — Niklas Luhmann의 원자적 노트 + 메모 연결 방법론, 옵시디언 위키링크로 구현
 - [[wiki/concepts/spring-ai|Spring AI]] — Java/Spring 생태계 AI 통합 프레임워크, Advisor Chain + Portable API
 - [[wiki/concepts/langchain4j|Langchain4j]] — Java용 LLM 통합 프레임워크, AiServices Reflection 기반 프록시 패턴
 - [[wiki/concepts/huggingface-embedding|HuggingFace 임베딩]] — sentence-transformers, MTEB 벤치마크, 한국어 임베딩 모델, ONNX 변환
@@ -106,6 +115,10 @@ total_sources: 41
 - [[wiki/concepts/1인-saas-창업|AI 시대 1인 SaaS 창업]] — PMF 검증, 오버 엔지니어링 회피, 해자 전략, Claude Code 개발 루틴
 - [[wiki/concepts/ai-네이티브-경영|AI 네이티브 경영]] — 업무 70~80% 에이전트 대체, 주관식→객관식 전환, 또라이 지수 채용 기준
 - [[wiki/concepts/ai-인프라-토큰-이코노미|AI 인프라 & 토큰 이코노미]] — 4단계 병목(반도체→전력→네트워크→데이터), 메모리 꽃놀이패, 5단 케이크
+
+### AI 코딩 워크플로우 & 콘텐츠 자동화 (2)
+- [[wiki/concepts/루프-엔지니어링|루프 엔지니어링]] — 코딩 에이전트를 반복 시스템으로 설계, 작성자–검증자 분리·외부 메모리, 이 브레인과의 대응
+- [[wiki/concepts/ai-콘텐츠-제작-자동화|AI 콘텐츠 제작·게시 자동화]] — AI를 변환기·실행기로 활용, 운영 루프와 지표 해석 프레임
 
 ### 부동산 / 도시 (1)
 - [[wiki/concepts/서울-부동산-도시전략|서울 부동산 & 도시 전략]] — 확장 강남 벨트, GTX 체크리스트, 반도체 벨트, 지방 도시 전략
@@ -146,9 +159,12 @@ total_sources: 41
 
 ## Entities
 
-### People (11)
+### People (14)
 
 - [[wiki/entities/people/안드레이-카파시|Andrej Karpathy]] — OpenAI 공동 창립 멤버, LLM Wiki 패턴 창시자
+- [[wiki/entities/people/addy-osmani|Addy Osmani]] — Google 엔지니어·저술가, 루프 엔지니어링 개념 제안
+- [[wiki/entities/people/김솔|김솔]] — Codex로 육아기록을 인스타툰으로 자동화, 6주 333만 조회, Pieceful 앱 제작
+- [[wiki/entities/people/브레인-트리니티|브레인 트리니티]] — 연구자용 세컨드 브레인·제텔카스텐·옵시디언 유튜브 채널
 - [[wiki/entities/people/김영익|김영익]] — 서강대 경제학과 교수, 경기순환 기반 자산배분 전략가, 유튜브 채널 운영
 - [[wiki/entities/people/김광석|김광석]] — 한국경제산업연구원 경제연구실장, 환율·물가·잠재성장률 즉시 분석, 경읽남 채널
 - [[wiki/entities/people/송팀장|송팀장]] — 미국 ETF·거시경제 유튜버, 지수 구조 분석 중심
@@ -160,9 +176,11 @@ total_sources: 41
 - [[wiki/entities/people/코드팩토리|코드팩토리]] — 한국 개발 교육 유튜브 채널, Claude Code·Flutter·NestJS·TypeScript 강의, 국내 최초 Claude Code 서적
 - [[wiki/entities/people/ross-cameron|Ross Cameron (Day Trade Warrior)]] — 미국 소형주 모멘텀 데이트레이더, 600달러→2,000만 달러, Warrior Trading 운영
 
-### Tools (9)
+### Tools (11)
 
 - [[wiki/entities/tools/notebooklm|NotebookLM]] — Google의 소스 기반 AI 리서치 도구, CLI 연동 가능
+- [[wiki/entities/tools/zotero|Zotero]] — 연구자용 무료·오픈소스 레퍼런스 관리 도구, 옵시디언 연동
+- [[wiki/entities/tools/shiftee|시프티 (Shiftee)]] — 클라우드 근태·인사관리 SaaS, 출퇴근 인증·전자결재·데이터 마이그레이션
 - [[wiki/entities/tools/obsidian-web-clipper|Obsidian Web Clipper]] — 웹 페이지를 마크다운으로 변환해 vault에 저장하는 브라우저 확장
 - [[wiki/entities/tools/qmd|qmd]] — 마크다운 파일 로컬 검색 엔진 (BM25 + 벡터 + LLM 리랭킹)
 - [[wiki/entities/tools/hermes-agent|Hermes Agent]] — LLM Wiki 스킬이 내장된 에이전트 CLI
